@@ -1,0 +1,15 @@
+.header__button {
+  border-style: none;
+  padding: 0 28px 0 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.header__button:last-of-type {
+  padding-right: 0;
+}

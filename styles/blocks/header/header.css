@@ -1,0 +1,7 @@
+@import url(./__button/header__button.css);
+
+.header {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+}

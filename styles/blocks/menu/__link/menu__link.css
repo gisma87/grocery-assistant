@@ -1,0 +1,10 @@
+@import url(./_active/menu__link_active.css);
+
+.menu__link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #000;
+}
