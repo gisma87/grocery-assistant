@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="root">
-    <header class="header root__section">
+    <header class="header root__section root__section_padding_header">
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
@@ -35,8 +35,39 @@
         <button class="header__button">Изменить пароль</button>
         <button class="header__button">Выход</button>
       </div>
-
     </header>
+    <main class="root__section">
+      <div class="mealtime-container">
+        <h1 class="content-title">Рецепты</h1>
+        <div class="mealtime">
+          <button class="mealtime__button mealtime__button_type_breakfast"></button>
+          <p class="mealtime__paragraph">Завтрак</p>
+          <button class="mealtime__button mealtime__button_type_lunch"></button>
+          <p class="mealtime__paragraph">Обед</p>
+          <button class="mealtime__button mealtime__button_type_dinner"></button>
+          <p class="mealtime__paragraph">Ужин</p>
+        </div>
+      </div>
+      <section class="recipes root__recipes">
+        <div class="recipe">
+          <img src="../images/french-toast.jpg" alt="Фото рецепта" class="recipe__image">
+          <div class="recipe__content">
+            <p class="recipe__title">Французские тосты</p>
+            <div class="recipe-info">
+              <span class="recipe-info__mealtime recipe-info__mealtime_type_breakfast">Завтрак</span>
+              <span class="recipe-info__mealtime recipe-info__mealtime_type_lunch">Обед</span>
+              <span class="recipe-info__mealtime recipe-info__mealtime_type_dinner">Ужин</span>
+              <p class="recipe-info__time">20 мин.</p>
+              <p class="recipe-info__author">Вероника Чернова</p>
+            </div>
+            <div class="recipe__container">
+              <button class="button">Добавить в покупки</button>
+              <button class="button-star button-star_actived"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__container">
         <a class="footer__link" href="#">Продуктовый помощник</a>
