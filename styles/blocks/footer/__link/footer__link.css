@@ -1,13 +1,13 @@
-.menu__link {
+.footer__link {
   text-decoration: none;
+  color: #fff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
   font-style: normal;
-  color: #000;
   transition: opacity .5s ease;
 }
 
-.menu__link:hover {
+.footer__link:hover {
   opacity: .7;
 }

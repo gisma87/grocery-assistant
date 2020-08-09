@@ -1,0 +1,7 @@
+@import url(./__container/footer__container.css);
+@import url(./__link/footer__link.css);
+
+.footer {
+  min-height: 89px;
+  background-color: #000;
+}
