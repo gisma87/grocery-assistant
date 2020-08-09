@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="root">
-    <header class="header root__section">
+    <header class="header root__section root__section_margins_bottom">
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
@@ -35,8 +35,20 @@
         <button class="header__button">Изменить пароль</button>
         <button class="header__button">Выход</button>
       </div>
-
     </header>
+    <main class="root__section">
+      <div class="mealtime-container">
+        <h1 class="content-title">Рецепты</h1>
+        <div class="mealtime">
+          <button class="mealtime__button mealtime__button_type_breakfast"></button>
+          <p class="mealtime__paragraph">Завтрак</p>
+          <button class="mealtime__button mealtime__button_type_lunch"></button>
+          <p class="mealtime__paragraph">Обед</p>
+          <button class="mealtime__button mealtime__button_type_dinner"></button>
+          <p class="mealtime__paragraph">Ужин</p>
+        </div>
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer__container">
         <a class="footer__link" href="#">Продуктовый помощник</a>
