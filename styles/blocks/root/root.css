@@ -1,0 +1,22 @@
+@import url(./__section/root__section.css);
+@import url(./__recipes/root__recipes.css);
+@import url(./__section/_padding/_header/root__section_margins_header.css);
+
+.root {
+  margin: 0 auto;
+  padding-top: 34px;
+  max-width: 1440px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

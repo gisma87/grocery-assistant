@@ -1,0 +1,28 @@
+.button {
+  width: 224px;
+  height: 48px;
+  border-radius: 6px;
+  cursor: pointer;
+  border-style: none;
+  background-color: #F0F3FF;
+  color: #4A61DD;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.button::before {
+  content: '+';
+  margin-right: 8px;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: #D8DEFF;
+}

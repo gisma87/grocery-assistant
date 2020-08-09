@@ -1,0 +1,18 @@
+@import "./__title/registration__title.css";
+@import "./__form/registration__form.css";
+@import "./__row-form/registration__row-form.css";
+@import "./__input-container/registration__input-container.css";
+@import "./__label/registration__label.css";
+@import "./__input/registration__input.css";
+@import "./__error/registration__error.css";
+@import "./__button/registration__button.css";
+
+.registration {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 45px;
+  width: 100%;
+  height: 100%;
+}
