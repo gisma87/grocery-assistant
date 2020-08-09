@@ -5,6 +5,7 @@
   padding-top: 34px;
   max-width: 1440px;
   min-height: 100vh;
+  box-sizing: border-box;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,4 +13,8 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

@@ -1,4 +1,135 @@
 .registration {
-  max-width: 1440px;
-  min-height: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 45px;
+  width: 100%;
+  height: 100%;
+}
+
+.registration__title {
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  margin: 0;
+}
+
+.registration__form-container {
+  max-width: 770px;
+  max-height: 499px;
+  width: 100%;
+  flex-grow: 1;
+  align-self: center;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin-top: 58px;
+  padding: 55px 45px 64px 69px;
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.registration__row-form {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration__input-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  width: 100%;
+  margin-left: 15px;
+
+}
+
+.registration__label {
+  margin-top: 6px;
+}
+
+.registration__input {
+  height: 42px;
+  background: #FFFFFF;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 0 7px;
+  outline: none;
+}
+
+.registration__input:focus {
+  border: 1px solid #4A61DD;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: all .3s ease 0s;
+}
+
+.registration__error {
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 5px 0;
+  color: #FF0000;
+  visibility: hidden;
+  word-wrap: break-word;
+  min-height: 25px;
+}
+
+.registration__button {
+  margin-top: 22px;
+}
+
+.button {
+  background: #4A61DD;
+  border-radius: 6px;
+
+  width: 206px;
+  height: 48px;
+
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  color: #FFFFFF;
+
+  outline: none;
+  border: none;
+
+  position: relative;
+  top: 0;
+  transition: all 1s ease 0s;
+}
+.button:hover {
+  top: -3px;
+  transition: all 0.5s ease 0.2s;
+  box-shadow: 0 2px 0 0 #CDD5D4;
+  background: #2845DF;
+}
+
+.button:active {
+  top: -1px;
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 0 0 0 #CDD5D4;
+}
+
+.button__shift-top {
+  transform: translateY(-15px);
 }
