@@ -1,0 +1,17 @@
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 770px;
+  max-height: 499px;
+  width: 100%;
+  flex-grow: 1;
+  align-self: center;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin-top: 58px;
+  padding: 55px 45px 64px 69px;
+}

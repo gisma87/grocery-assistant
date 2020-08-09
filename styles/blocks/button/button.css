@@ -1,0 +1,38 @@
+.button {
+  background: #4A61DD;
+  border-radius: 6px;
+
+  width: 206px;
+  height: 48px;
+
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  color: #FFFFFF;
+
+  outline: none;
+  border: none;
+
+  position: relative;
+  top: 0;
+  transition: all 1s ease 0s;
+}
+.button:hover {
+  top: -3px;
+  transition: all 0.5s ease 0.2s;
+  box-shadow: 0 2px 0 0 #CDD5D4;
+  background: #2845DF;
+}
+
+.button:active {
+  top: -1px;
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 0 0 0 #CDD5D4;
+}
