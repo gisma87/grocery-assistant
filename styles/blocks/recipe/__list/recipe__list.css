@@ -1,0 +1,9 @@
+.recipe__list {  
+  /*-moz-column-count: 2; /* Firefox */
+  /*-webkit-column-count: 2; /* Safari and Chrome */
+  column-count: 2;
+  list-style-type: none;
+  column-fill: auto;
+  height: 104px;
+  padding: 0;
+}

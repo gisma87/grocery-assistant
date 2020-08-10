@@ -1,0 +1,17 @@
+@import url(./_color/button_color_blue.css);
+@import url(./_color/button_color_grey.css);
+@import url(./__icon/button__icon.css);
+
+.button {  
+  border-radius: 6px;
+  cursor: pointer;
+  border-style: none;  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+}

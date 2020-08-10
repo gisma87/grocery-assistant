@@ -1,0 +1,16 @@
+@import url(./__section/root__section.css);
+@import url(./__section/_margins/_bottom/root__section_margins_bottom.css);
+
+.root {
+  margin: 0 auto;
+  padding-top: 34px;
+  max-width: 1440px;
+  min-height: 100vh;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  background-color: #fff;
+}

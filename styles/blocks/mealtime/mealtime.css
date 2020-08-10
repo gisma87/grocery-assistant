@@ -1,0 +1,14 @@
+@import url(./__paragraph/mealtime__paragraph.css);
+@import url(./__button/_type/_dinner/mealtime__button_type_dinner.css);
+@import url(./__button/_type/_lunch/mealtime__button_type_lunch.css);
+@import url(./__button/_type/_breakfast/mealtime__button_type_breakfast.css);
+@import url(./__button/mealtime__button.css);
+
+.mealtime {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}

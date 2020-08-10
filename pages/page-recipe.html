@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="html, css">
+  <meta name="description" content="Продуктовый помощник">
+  <link rel="stylesheet" href="../styles/page-recipe.css">
+  <title>Продуктовый помощник</title>
+</head>
+
+<body>
+  <div class="root">
+    <header class="header root__section root__section_margins_bottom">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_active">Рецепты</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Мои подписки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Создать рецепт</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Избранное</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Список покупок</a>
+            <span class="menu__counter">27</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__container">
+        <button class="header__button">Изменить пароль</button>
+        <button class="header__button">Выход</button>
+      </div>
+    </header>
+
+    <main class="root__section">
+      <article class="recipe">
+        <div class="recipe__wrapper">
+          <img src="../images/toasts.png" alt="" class="recipe__photo" />
+        </div>
+        <div class="recipe__description">
+          <div class="recipe__header">
+            <div class="recipe__block-title">
+              <h1 class="content-title">Французские тосты</h1>
+              <img src="../images/star-inactive.png" alt="" class="recipe__favourites" />
+            </div>
+            <div class="recipe__about">
+              <p class="recipe__mialtime">Завтрак</p>
+              <p class="recipe__cookingtime">Завтрак</p>
+              <p class="recipe__author">Завтрак</p>
+            </div>
+          </div>
+          <div class="recipe__block-buttons">
+            <button class="button recipe__button button_color_blue"><img src="../images/plus.png" class="button__icon"
+                alt="значек плюс" /> &emsp; Добавить
+              рецепт</button>
+            <button class="button button_color_grey">Подписаться на автора</button>
+          </div>
+          <div class="recipe__ingredients">
+            <h2 class="recipe__subtitle">
+              Ингредиенты:
+            </h2>
+            <ul class="recipe__list">
+              <li class="recipe__item">яйцо - 2 шт.</li>
+              <li class="recipe__item">молоко - 200 мл.</li>
+              <li class="recipe__item">тосты - 4 шт.</li>
+              <li class="recipe__item">сахар - 2 ст.л.</li>
+              <li class="recipe__item">ягоды - 100 гр.</li>
+              <li class="recipe__item">сироп топинамбура - 3 ст.л.</li>
+            </ul>
+          </div>
+          <div class="recipe__instruction">
+            <h2 class="recipe__subtitle">Описание</h2>
+            <p class="recipe__text">Смешать молоко с сахаром, добавить яйца, тщательно все взбить. Обмакнуть тосты в
+              смесь и жарить на сливочном масле до золотистой корочки.
+            </p>
+            <p class="recipe__text">Полить сверху сиропом топинамбура и украсить ягодами.</p>
+          </div>
+
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__link" href="#">Продуктовый помощник</a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Технологии</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
