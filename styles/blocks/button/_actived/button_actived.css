@@ -1,0 +1,11 @@
+.button.button_actived {
+  border: 1px solid #DEE2F2;
+  background-color: #fff;
+}
+
+.button.button_actived::before {
+  content: '✓';
+  margin-right: 8px;
+  font-size: 26px;
+  font-weight: 400;
+}
