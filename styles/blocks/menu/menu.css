@@ -3,7 +3,7 @@
 @import url(./__link/menu__link.css);
 @import url(./__counter/menu__counter.css);
 @import url(./__link/_active/menu__link_active.css);
-@import url(./__link/_color/_white/menu__link_color_white.css);
+@import url(./__link/_color/menu__link_color_white.css);
 
 .menu {
   display: flex;
