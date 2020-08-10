@@ -1,9 +1,14 @@
 .recipe__list {  
-  /*-moz-column-count: 2; /* Firefox */
-  /*-webkit-column-count: 2; /* Safari and Chrome */
+  display: inline-block;
+  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2; /* Safari and Chrome */
+  -moz-column-width: 100px;
+  -webkit-column-width: 100px;
   column-count: 2;
+  column-width: 100px;
   list-style-type: none;
   column-fill: auto;
   height: 104px;
   padding: 0;
+  margin: 0;
 }
