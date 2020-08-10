@@ -1,11 +1,11 @@
 @import url(./_actived/button-star_actived.css);
+@import url(./_inactived/button-star_inactived.css);
+@import url(./_size/button-star_size_s.css);
+@import url(./_size/button-star_size_l.css);
 
 .button-star {
-  width: 20px;
-  height: 20px;
   cursor: pointer;
   border-style: none;
-  background-image: url('../../../images/star-transparent.png');
   background-color: #fff;
   background-size: cover;
   background-position: center;

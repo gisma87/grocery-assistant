@@ -1,0 +1,6 @@
+.button_type_tick::before {
+  content: '\2713';
+  margin-right: 8px;
+  font-size: 26px;
+  font-weight: 400;
+}

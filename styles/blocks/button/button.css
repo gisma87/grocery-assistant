@@ -1,13 +1,15 @@
-@import url(./_actived/button_actived.css);
+@import url(./_color/button_color_blue.css);
+@import url(./_color/button_color_gray.css);
+@import url(./_color/button_color_white.css);
+@import url(./_size/button_size_s.css);
+@import url(./_size/button_size_l.css);
+@import url(./_type/button_type_plus.css);
+@import url(./_type/button_type_tick.css);
 
 .button {
-  width: 224px;
-  height: 48px;
   border-radius: 6px;
   cursor: pointer;
   border-style: none;
-  background-color: #F0F3FF;
-  color: #4A61DD;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -15,16 +17,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-}
-
-.button::before {
-  content: '+';
-  margin-right: 8px;
-  font-size: 34px;
-  font-weight: 400;
-}
-
-.button:hover {
-  background-color: #D8DEFF;
 }
