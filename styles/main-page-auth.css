@@ -7,6 +7,7 @@
 @import url(./blocks/mealtime-container/mealtime-container.css);
 @import url(./blocks/mealtime/mealtime.css);
 @import url(./blocks/recipes/recipes.css);
+@import url(./blocks/recipe-subtitle/recipe-subtitle.css);
 @import url(./blocks/card-recipe/card-recipe.css);
 @import url(./blocks/recipe-info/recipe-info.css);
 @import url(./blocks/button/button.css);
