@@ -1,0 +1,19 @@
+.recipe-info__time {
+  margin: 20px 0 0;
+  display: flex;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.recipe-info__time::before {
+  display: inline-block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background-image: url('../../../../images/clock.png');
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}

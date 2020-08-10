@@ -9,9 +9,8 @@
 @import url(./__list/recipe__list.css);
 @import url(./__photo/recipe__photo.css);
 @import url(./__wrapper/recipe__wrapper.css);
-@import url(./__favourites/recipe__favourites.css);
-@import url(./__subtitle/recipe__subtitle.css);
 @import url(./__text/recipe__text.css);
+@import url(./__recipe-info/recipe__recipe-info.css);
 
 .recipe {
   display: grid;
