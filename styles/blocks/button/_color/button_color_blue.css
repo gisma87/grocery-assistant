@@ -1,8 +1,6 @@
 .button.button_color_blue {
   background-color: #4A61DD;
   color: #fff;
-  font-size: 18px;
-  line-height: 22px;
 }
 
 .button_color_blue:hover {

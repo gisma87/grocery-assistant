@@ -1,8 +1,8 @@
-.button_color_gray {
+.button_color_grey {
   background-color: #F0F3FF;
   color: #4A61DD;
 }
 
-.button_color_gray:hover {
+.button_color_grey:hover {
   background-color: #D8DEFF;
 }
