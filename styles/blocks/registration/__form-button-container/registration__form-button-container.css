@@ -1,0 +1,6 @@
+.registration__form-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 0 0;
+}

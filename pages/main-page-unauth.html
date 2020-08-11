@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="html, css">
   <meta name="description" content="Продуктовый помощник">
-  <link rel="stylesheet" href="../styles/main-page-auth.css">
+  <link rel="stylesheet" href="../styles/main-page-unauth.css">
   <title>Продуктовый помощник</title>
 </head>
 <body>
@@ -17,22 +17,12 @@
             <a href="#" class="menu__link menu__link_active">Рецепты</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Мои подписки</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Создать рецепт</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Избранное</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Список покупок</a>
-            <span class="menu__counter">27</span>
+            <a href="#" class="menu__link menu__link_color_grey">Список покупок</a>
           </li>
         </ul>
         <div class="menu__container">
-          <a href="#" class="menu__link menu__link_margins_right">Изменить пароль</a>
-          <button class="menu__button">Выход</button>
+          <a href="#" class="menu__link menu__link_margins_right">Войти</a>
+          <button class="button button_font button_color_blue button_size_s">Создать аккаунт</button>
         </div>
       </nav>
     </header>
@@ -54,7 +44,9 @@
             <img src="../images/french-toast.jpg" alt="Фото рецепта" class="card-recipe__image">
           </a>
             <div class="card-recipe__content">
-              <h2 class="recipe-subtitle">Французские тосты</h2>
+              <a class="card-recipe__link" href="#" target="_blank">
+                <h2 class="recipe-subtitle">Французские тосты</h2>
+              </a>
               <div class="recipe-info">
                 <span class="recipe-info__mealtime recipe-info__mealtime_type_breakfast">Завтрак</span>
                 <p class="recipe-info__time">20 мин.</p>
@@ -63,41 +55,43 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
           <a class="card-recipe__link" href="#" target="_blank">
-            <img src="../images/french-toast.jpg" alt="Фото рецепта" class="card-recipe__image">
+            <img src="../images/pasta.jpg" alt="Фото рецепта" class="card-recipe__image">
           </a>
             <div class="card-recipe__content">
-              <h2 class="recipe-subtitle">Французские тосты</h2>
+              <a class="card-recipe__link" href="#" target="_blank">
+                <h2 class="recipe-subtitle">Паста с беконом</h2>
+              </a>
               <div class="recipe-info">
-                <span class="recipe-info__mealtime recipe-info__mealtime_type_breakfast">Завтрак</span>
-                <p class="recipe-info__time">20 мин.</p>
-                <p class="recipe-info__author">Вероника Чернова</p>
+                <span class="recipe-info__mealtime recipe-info__mealtime_type_lunch">Обед</span>
+                <span class="recipe-info__mealtime recipe-info__mealtime_type_dinner">Ужин</span>
+                <p class="recipe-info__time">30 мин.</p>
+                <p class="recipe-info__author">Iera</p>
               </div>
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-              <button class="button-star button-star_inactived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
           <a class="card-recipe__link" href="#" target="_blank">
-            <img src="../images/french-toast.jpg" alt="Фото рецепта" class="card-recipe__image">
+            <img src="../images/english-breakfast.jpg" alt="Фото рецепта" class="card-recipe__image">
           </a>
             <div class="card-recipe__content">
-              <h2 class="recipe-subtitle">Французские тосты</h2>
+              <a class="card-recipe__link" href="#" target="_blank">
+                <h2 class="recipe-subtitle">Английский завтрак</h2>
+              </a>
               <div class="recipe-info">
                 <span class="recipe-info__mealtime recipe-info__mealtime_type_breakfast">Завтрак</span>
-                <p class="recipe-info__time">20 мин.</p>
-                <p class="recipe-info__author">Вероника Чернова</p>
+                <p class="recipe-info__time">35 мин.</p>
+                <p class="recipe-info__author">Александр Бородин</p>
               </div>
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
@@ -105,7 +99,9 @@
             <img src="../images/french-toast-2.jpg" alt="Фото рецепта" class="card-recipe__image">
           </a>
             <div class="card-recipe__content">
-              <h2 class="recipe-subtitle">Французский тост с сиропом агавы</h2>
+              <a class="card-recipe__link" href="#" target="_blank">
+                <h2 class="recipe-subtitle">Французский тост с сиропом агавы</h2>
+              </a>
               <div class="recipe-info">
                 <span class="recipe-info__mealtime recipe-info__mealtime_type_breakfast">Завтрак</span>
                 <span class="recipe-info__mealtime recipe-info__mealtime_type_lunch">Обед</span>
@@ -115,7 +111,6 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
@@ -123,7 +118,9 @@
             <img src="../images/waffles.jpg" alt="Фото рецепта" class="card-recipe__image">
           </a>
             <div class="card-recipe__content">
-              <h2 class="recipe-subtitle">Вафли с яйцом «Бенедикт» и лососем</h2>
+              <a class="card-recipe__link" href="#" target="_blank">
+                <h2 class="recipe-subtitle">Вафли с яйцом «Бенедикт» и лососем</h2>
+              </a>
               <div class="recipe-info">
                 <span class="recipe-info__mealtime recipe-info__mealtime_type_breakfast">Завтрак</span>
                 <span class="recipe-info__mealtime recipe-info__mealtime_type_lunch">Обед</span>
@@ -133,7 +130,6 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-              <button class="button-star button-star_inactived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
@@ -141,7 +137,9 @@
             <img src="../images/croissants.jpg" alt="Фото рецепта" class="card-recipe__image">
           </a>
             <div class="card-recipe__content">
-              <h2 class="recipe-subtitle">Круассан с омлетом, лососем и голландским соусом</h2>
+              <a class="card-recipe__link" href="#" target="_blank">
+                <h2 class="recipe-subtitle">Круассан с омлетом, лососем и голландским соусом</h2>
+              </a>
               <div class="recipe-info">
                 <span class="recipe-info__mealtime recipe-info__mealtime_type_breakfast">Завтрак</span>
                 <span class="recipe-info__mealtime recipe-info__mealtime_type_lunch">Обед</span>
@@ -151,7 +149,6 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
       </section>

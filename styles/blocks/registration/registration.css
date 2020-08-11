@@ -6,13 +6,17 @@
 @import "./__input/registration__input.css";
 @import "./__error/registration__error.css";
 @import "./__button/registration__button.css";
+@import "./__hint/registration__hint.css";
+@import "./__hint-container/registration__hint-container.css";
+@import "./__hint-password/registration__hint-password.css";
+@import "./__form-button-container/registration__form-button-container.css";
+@import "./__subtitle/registration__subtitle.css";
 
 .registration {
   max-width: 1170px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-top: 45px;
   width: 100%;
   height: 100%;
 }
