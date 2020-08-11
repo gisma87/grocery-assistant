@@ -2,8 +2,6 @@
 @import url(./__container/header__container.css);
 
 .header {
-  max-width: 1170px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }

@@ -1,6 +1,6 @@
 @import url(./__mealtime/recipe-info__mealtime.css);
-@import url(./__mealtime/_type/_breakfast/recipe-info__mealtime_type_breakfast.css);
-@import url(./__mealtime/_type/_lunch/recipe-info__mealtime_type_lunch.css);
-@import url(./__mealtime/_type/_dinner/recipe-info__mealtime_type_dinner.css);
+@import url(./__mealtime/_type/recipe-info__mealtime_type_breakfast.css);
+@import url(./__mealtime/_type/recipe-info__mealtime_type_lunch.css);
+@import url(./__mealtime/_type/recipe-info__mealtime_type_dinner.css);
 @import url(./__time/recipe-info__time.css);
 @import url(./__author/recipe-info__author.css);
