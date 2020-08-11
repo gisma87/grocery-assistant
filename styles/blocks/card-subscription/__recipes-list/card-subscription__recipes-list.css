@@ -1,0 +1,6 @@
+.card-subscription__recipes-list {  
+  list-style-type: none;
+  margin: 0px 0 16px;
+  padding: 0;  
+  flex-grow: 1;
+}

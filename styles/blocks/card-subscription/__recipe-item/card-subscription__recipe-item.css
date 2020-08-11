@@ -1,0 +1,15 @@
+.card-subscription__recipe-item {    
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000;
+    transition: opacity .5s ease;    
+    margin-bottom: 16px;
+    
+  }
+  
+  .card-subscription__recipe-item:hover {
+    opacity: .7;
+  }

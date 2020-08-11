@@ -4,3 +4,10 @@
 @import url(./__mealtime/_type/recipe-info__mealtime_type_dinner.css);
 @import url(./__time/recipe-info__time.css);
 @import url(./__author/recipe-info__author.css);
+@import url(./__title/recipe-info__title.css);
+
+.recipe-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
