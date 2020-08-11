@@ -5,4 +5,8 @@
 @import url(./blocks/menu/menu.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/registration/registration.css);
-@import url(./blocks/button-blue/button-blue.css);
+@import url(./blocks/button/button.css);
+@import url(./blocks/button/_font/button_font.css);
+@import url(./blocks/button/_shift-top/button_shift-top.css);
+@import url(./blocks/registration/__button/registration__button.css);
+@import url(./blocks/content-title/content-title.css);

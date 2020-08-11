@@ -1,4 +1,4 @@
 .menu__container {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
 }
