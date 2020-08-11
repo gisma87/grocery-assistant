@@ -11,21 +11,21 @@
 
 <body>
 <div class="root">
-  <header class="header root__section header_height">
+  <header class="header root__section root__section_padding_bottom">
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#" class="menu__link">Рецепты</a>
+          <a href="#" class="menu__link menu__link_active">Рецепты</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Список покупок</a>
         </li>
       </ul>
+      <div class="menu__container">
+        <a href="#" class="menu__link menu__link_margins_right">Войти</a>
+        <button class="button button_color_blue button_size_l button_font button_shift-top">Создать аккаунт</button>
+      </div>
     </nav>
-    <div class="header__container menu">
-      <button class="header__button"><span class="menu__link">Войти</span></button>
-      <button class="button button_color_blue button_size_l button_font button_shift-top">Создать аккаунт</button>
-    </div>
   </header>
 
   <main class="registration root__section root__section_padding_bottom">
@@ -107,7 +107,7 @@
   <footer class="footer">
     <div class="footer__container">
       <a class="footer__link" href="#">Продуктовый помощник</a>
-      <nav class="menu">
+      <nav class="menu footer__menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
