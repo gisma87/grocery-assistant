@@ -5,6 +5,7 @@
 @import url(./_size/button_size_l.css);
 @import url(./_type/button_type_plus.css);
 @import url(./_type/button_type_tick.css);
+@import url(./_font/button_font.css);
 
 .button {
   border-radius: 6px;
