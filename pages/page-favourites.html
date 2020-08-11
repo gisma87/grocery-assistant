@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="html, css">
   <meta name="description" content="Продуктовый помощник">
-  <link rel="stylesheet" href="../styles/main-page-unauth.css">
+  <link rel="stylesheet" href="../styles/page-favourites.css">
   <title>Продуктовый помощник</title>
 </head>
 <body>
@@ -14,21 +14,30 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link menu__link_active">Рецепты</a>
+            <a href="#" class="menu__link">Рецепты</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link menu__link_color_grey">Список покупок</a>
+            <a href="#" class="menu__link">Мои подписки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Создать рецепт</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_active">Избранное</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Список покупок</a>
           </li>
         </ul>
         <div class="menu__container">
-          <a href="#" class="menu__link menu__link_margins_right">Войти</a>
-          <button class="button button_font button_color_blue button_size_s">Создать аккаунт</button>
+          <a href="#" class="menu__link menu__link_margins_right">Изменить пароль</a>
+          <button class="menu__button">Выход</button>
         </div>
       </nav>
     </header>
     <main class="root__section">
       <section class="mealtime">
-        <h1 class="content-title">Рецепты</h1>
+        <h1 class="content-title">Избранное</h1>
         <div class="mealtime__container">
           <button class="mealtime__button mealtime__button_type_breakfast"></button>
           <p class="mealtime__paragraph">Завтрак</p>
@@ -55,6 +64,7 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
@@ -74,6 +84,7 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
@@ -92,6 +103,7 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
@@ -111,6 +123,7 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
@@ -130,6 +143,7 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
         <div class="card-recipe">
@@ -149,6 +163,7 @@
             </div>
             <div class="card-recipe__container">
               <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+              <button class="button-star button-star_actived button-star_size_s"></button>
             </div>
         </div>
       </section>
