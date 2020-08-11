@@ -1,12 +1,9 @@
-.registration__error {
+.registration__hint {
+  margin: 0;
   font-family: Montserrat, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  margin: 5px 0;
-  color: #FF0000;
-  display: none;
-  word-wrap: break-word;
-  min-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
 }

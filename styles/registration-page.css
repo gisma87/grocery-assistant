@@ -5,4 +5,6 @@
 @import url(./blocks/menu/menu.css);
 @import url(./blocks/footer/footer.css);
 @import "./blocks/registration/registration.css";
+@import "./blocks/button/button.css";
 @import "./blocks/button-blue/button-blue.css";
+@import "./blocks/content-title/content-title.css";
