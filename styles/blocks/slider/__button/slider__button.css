@@ -1,0 +1,19 @@
+.slider__button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  cursor: pointer;
+  border-style: none;
+  background-color: #4A61DD;;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0;
+  margin-right: 21px;
+}
+
+.slider__button:last-child {
+  margin-right: 0;
+}
