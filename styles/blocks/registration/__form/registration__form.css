@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 770px;
-  max-height: 499px;
+  /*max-height: 499px;*/
   width: 100%;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   align-self: center;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
