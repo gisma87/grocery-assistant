@@ -16,4 +16,6 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
