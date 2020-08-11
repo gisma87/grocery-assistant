@@ -1,21 +1,12 @@
 @import url(./_actived/button-star_actived.css);
 @import url(./_inactived/button-star_inactived.css);
-<<<<<<< HEAD
 @import url(./_size/button-star_size_l.css);
 @import url(./_size/button-star_size_s.css);
 @import url(./__tooplist/button-star__tooplist.css);
 
-.button-star {    
-  cursor: pointer;
-  border-style: none;  
-=======
-@import url(./_size/button-star_size_s.css);
-@import url(./_size/button-star_size_l.css);
-
 .button-star {
   cursor: pointer;
   border-style: none;
->>>>>>> develop
   background-color: #fff;
   background-size: cover;
   background-position: center;
