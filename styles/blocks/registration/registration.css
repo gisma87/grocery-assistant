@@ -10,6 +10,7 @@
 @import "./__hint-container/registration__hint-container.css";
 @import "./__hint-password/registration__hint-password.css";
 @import "./__form-button-container/registration__form-button-container.css";
+@import "./__subtitle/registration__subtitle.css";
 
 .registration {
   max-width: 1170px;
