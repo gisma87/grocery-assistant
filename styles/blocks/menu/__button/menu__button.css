@@ -1,4 +1,4 @@
-.header__button {
+.menu__button {
   border-style: none;
   padding: 0 28px 0 0;
   font-size: 16px;
@@ -11,10 +11,10 @@
   transition: opacity .5s ease;
 }
 
-.header__button:last-of-type {
+.menu__button:last-of-type {
   padding-right: 0;
 }
 
-.header__button:hover {
+.menu__button:hover {
   opacity: .7;
 }

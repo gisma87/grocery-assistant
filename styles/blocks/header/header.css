@@ -1,7 +1,6 @@
-@import url(./__button/header__button.css);
-@import url(./__container/header__container.css);
-
 .header {
+  width: 100%;
+  min-height: 46px;
   display: flex;
   justify-content: space-between;
 }

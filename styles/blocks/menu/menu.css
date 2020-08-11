@@ -2,9 +2,14 @@
 @import url(./__item/menu__item.css);
 @import url(./__link/menu__link.css);
 @import url(./__counter/menu__counter.css);
+@import url(./__container/menu__container.css);
+@import url(./__button/menu__button.css);
 @import url(./__link/_active/menu__link_active.css);
 @import url(./__link/_color/menu__link_color_white.css);
+@import url(./__link/_margins/menu__link_margins_right.css);
 
 .menu {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
