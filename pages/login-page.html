@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="html, css">
+  <meta name="description" content="Продуктовый помощник">
+  <link rel="stylesheet" href="../styles/registration-page.css">
+  <title>Продуктовый помощник</title>
+</head>
+
+<body>
+<div class="root">
+  <header class="header root__section header_height">
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Рецепты</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Список покупок</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__container">
+      <button class="header__button">Войти</button>
+      <button class="button-blue button-blue__shift-top">Создать аккаунт</button>
+    </div>
+
+  </header>
+
+  <main class="registration root__section root__section_padding_bottom">
+    <h1 class="registration__title  content-title">Войти на сайт</h1>
+    <form name="registration" class="registration__form">
+
+      <div class="registration__row-form">
+
+        <label for="name" class="registration__label">Имя пользователя</label>
+        <div class="registration__input-container">
+          <input
+            type="text"
+            name="_name"
+            id="name"
+            maxlength="20"
+            class="registration__input"
+            required
+          />
+          <span id="error-name" class="registration__error"></span>
+        </div>
+
+      </div>
+
+      <div class="registration__row-form">
+        <label for="password" class="registration__label">Пароль</label>
+        <div class="registration__input-container">
+          <input
+            type="password"
+            name="user-password"
+            id="password"
+            maxlength="20"
+            class="registration__input registration__input_error"
+            required
+          />
+          <span id="error-password" class="registration__error registration__error_active">
+            Имя пользователя и пароль не совпадают. Введите правильные данные.
+          </span>
+        </div>
+
+      </div>
+
+      <div class="registration__form-button-container">
+        <button class="button-blue">Войти</button>
+        <a href="#" class="registration__hint-password">Забыли пароль?</a>
+      </div>
+
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__link" href="#">Продуктовый помощник</a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_color_white">Технологии</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
+

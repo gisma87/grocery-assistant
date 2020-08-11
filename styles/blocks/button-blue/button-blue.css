@@ -23,11 +23,11 @@
 
   position: relative;
   top: 0;
-  transition: all 1s ease 0s;
+  transition: all .5s ease 0s;
 }
 .button-blue:hover {
   top: -3px;
-  transition: all 0.5s ease 0.2s;
+  transition: all 0.3s ease 0.2s;
   box-shadow: 0 2px 0 0 #CDD5D4;
   background: #2845DF;
 }
