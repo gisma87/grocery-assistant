@@ -1,5 +1,7 @@
 @import url(./__button/slider__button.css);
 @import url(./__button/_disabled/slider__button_disabled.css);
+@import url(./__button/_type/slider__button_type_right.css);
+@import url(./__button/_type/slider__button_type_left.css);
 
 .slider {
   display: flex;
