@@ -1,0 +1,15 @@
+@import url(./__input-green/checkbox__input-green.css);
+@import url(./__input-orange/checkbox__input-orange.css);
+@import url(./__input-purple/checkbox__input-purple.css);
+@import url(./__input-container/checkbox__input-container.css);
+@import url(./__label-green/checkbox__label-green.css);
+@import url(./__label-orange/checkbox__label-orange.css);
+@import url(./__label-purple/checkbox__label-purple.css);
+
+.checkbox {
+  max-width: 600px;
+  display: flex;
+  max-width: 370px;
+  width: 100%;
+  padding-bottom: 35px;
+}

@@ -1,7 +1,7 @@
-.recipe-create__input-green {
+.checkbox__input-green {
   display:none;
 }
-.recipe-create__input-green + .recipe-create__checkbox-green span {
+.checkbox__input-green + .checkbox__label-green span {
   display:inline-block;
   width:24px;
   height:24px;
@@ -10,6 +10,6 @@
   background:url("../../../../images/Ellipse_green.png") left top no-repeat;
   cursor:pointer;
 }
-.recipe-create__input-green:checked + .recipe-create__checkbox-green span {
+.checkbox__input-green:checked + .checkbox__label-green span {
   background:url("../../../../images/icon-lunch.png") left top no-repeat;
 }
