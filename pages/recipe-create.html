@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="html, css">
   <meta name="description" content="Продуктовый помощник">
-  <link rel="stylesheet" href="../styles/registration-page.css">
+  <link rel="stylesheet" href="../styles/recipe-create.css">
   <title>Продуктовый помощник</title>
 </head>
 
 <body>
 <div class="root">
-  <header class="header root__section root__section_padding_bottom">
+  <header class="header header_height root__section">
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item">
@@ -21,7 +21,7 @@
           <a href="#" class="menu__link">Мои подписки</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Создать рецепт</a>
+          <a href="#" class="menu__link menu__link_active">Создать рецепт</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Избранное</a>
@@ -31,26 +31,25 @@
         </li>
       </ul>
       <div class="menu__container">
-        <a href="#" class="menu__link menu__link_margins_right menu__link_active">Изменить пароль</a>
+        <a href="#" class="menu__link menu__link_margins_right">Изменить пароль</a>
         <button class="menu__button">Выход</button>
       </div>
     </nav>
   </header>
 
-
-
-  <main class="registration root__section root__section_padding_bottom">
-    <h1 class="registration__title  content-title">Изменить пароль</h1>
+  <main class="recipe-create registration root__section root__section_padding_bottom">
+    <h1 class="registration__title  content-title">Создание рецепта</h1>
     <form name="registration" class="registration__form">
 
       <div class="registration__row-form">
 
-        <label for="oldPassword" class="registration__label">Старый пароль</label>
+        <label for="oldPassword" class="registration__label">Название рецепта</label>
         <div class="registration__input-container">
           <input
             type="password"
             name="old-password"
             id="oldPassword"
+            placeholder="Оладьи с кабачком"
             maxlength="20"
             class="registration__input"
             required
@@ -60,27 +59,22 @@
 
       </div>
 
-      <div class="registration__row-form">
-        <label for="newPassword" class="registration__label">Новый пароль</label>
-        <div class="registration__input-container">
-          <input
-            type="password"
-            name="new-password"
-            id="newPassword"
-            maxlength="20"
-            class="registration__input"
-            required
-          />
-          <span id="error-newPassword" class="registration__error"></span>
-          <div class="registration__hint-container">
-            <p class="registration__hint">Ваш пароль не должен совпадать с вашим именем или другой персональной информацией или быть слишком похожим
-              на неё.</p>
-            <p class="registration__hint">Ваш пароль должен содержать как минимум 8 символов.</p>
-            <p class="registration__hint">Ваш пароль не может быть одним из широко распространённых паролей.</p>
-            <p class="registration__hint">Ваш пароль не может состоять только из цифр.</p>
+      <div class="recipe-create__row-form">
+        <p class="recipe-create__label-checkbox">Теги</p>
+        <div class="recipe-create__checkbox-container">
+          <div class="recipe-create__input-container">
+            <input type="checkbox" id="orange1" name="orange" class="recipe-create__input-orange" />
+            <label for="orange1" class="recipe-create__checkbox-orange"><span></span>Завтрак</label>
+          </div>
+          <div class="recipe-create__input-container">
+            <input type="checkbox" id="green1" name="green" class="recipe-create__input-green" />
+            <label for="green1" class="recipe-create__checkbox-green"><span></span>Обед</label>
+          </div>
+          <div class="recipe-create__input-container">
+            <input type="checkbox" id="purple1" name="purple" class="recipe-create__input-purple" />
+            <label for="purple1" class="recipe-create__checkbox-purple"><span></span>Ужин</label>
           </div>
         </div>
-
       </div>
 
       <div class="registration__row-form">
