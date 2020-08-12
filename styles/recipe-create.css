@@ -1,0 +1,39 @@
+@import url(./registration-page.css);
+@import url(./blocks/recipe-create/__input-orange/recipe-create__input-orange.css);
+@import url(./blocks/recipe-create/__input-green/recipe-create__input-green.css);
+@import url(./blocks/recipe-create/__input-purple/recipe-create__input-purple.css);
+
+.recipe-create {
+  padding-top: 44px;
+}
+
+.recipe-create__row-form {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-create__label-checkbox {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.recipe-create__checkbox-container {
+  max-width: 600px;
+}
+
+.recipe-create__checkbox-container {
+  display: flex;
+  max-width: 370px;
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+.recipe-create__input-container {
+  margin-left: 33px;
+}
+.recipe-create__input-container:first-child {
+  margin: 0;
+}

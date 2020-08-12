@@ -1,0 +1,15 @@
+.recipe-create__input-purple {
+  display:none;
+}
+.recipe-create__input-purple + .recipe-create__checkbox-purple span {
+  display:inline-block;
+  width:24px;
+  height:24px;
+  margin:-1px 4px 0 0;
+  vertical-align:middle;
+  background:url("../../../../images/Ellipse_purple.png") left top no-repeat;
+  cursor:pointer;
+}
+.recipe-create__input-purple:checked + .recipe-create__checkbox-purple span {
+  background:url("../../../../images/icon-dinner.png") left top no-repeat;
+}
