@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,113 +11,100 @@
 </head>
 
 <body>
-<div class="root">
-  <header class="header header_height root__section">
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="#" class="menu__link">Рецепты</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Мои подписки</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link menu__link_active">Создать рецепт</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Избранное</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Список покупок</a>
-        </li>
-      </ul>
-      <div class="menu__container">
-        <a href="#" class="menu__link menu__link_margins_right">Изменить пароль</a>
-        <button class="menu__button">Выход</button>
-      </div>
-    </nav>
-  </header>
-
-  <main class="recipe-create registration root__section root__section_padding_bottom">
-    <h1 class="registration__title  content-title">Создание рецепта</h1>
-    <form name="registration" class="registration__form">
-
-      <div class="registration__row-form">
-
-        <label for="oldPassword" class="registration__label">Название рецепта</label>
-        <div class="registration__input-container">
-          <input
-            type="password"
-            name="old-password"
-            id="oldPassword"
-            placeholder="Оладьи с кабачком"
-            maxlength="20"
-            class="registration__input"
-            required
-          />
-          <span id="error-oldPassword" class="registration__error"></span>
-        </div>
-
-      </div>
-
-      <div class="recipe-create__row-form">
-        <p class="recipe-create__label-checkbox">Теги</p>
-        <div class="recipe-create__checkbox-container">
-          <div class="recipe-create__input-container">
-            <input type="checkbox" id="orange1" name="orange" class="recipe-create__input-orange" />
-            <label for="orange1" class="recipe-create__checkbox-orange"><span></span>Завтрак</label>
-          </div>
-          <div class="recipe-create__input-container">
-            <input type="checkbox" id="green1" name="green" class="recipe-create__input-green" />
-            <label for="green1" class="recipe-create__checkbox-green"><span></span>Обед</label>
-          </div>
-          <div class="recipe-create__input-container">
-            <input type="checkbox" id="purple1" name="purple" class="recipe-create__input-purple" />
-            <label for="purple1" class="recipe-create__checkbox-purple"><span></span>Ужин</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="registration__row-form">
-        <label for="confirmPassword" class="registration__label">Подтверждение нового&nbsp;пароля</label>
-        <div class="registration__input-container">
-          <input
-            type="password"
-            name="confirm-password"
-            id="confirmPassword"
-            maxlength="20"
-            class="registration__input"
-            required
-          />
-          <span id="error-confirmPassword" class="registration__error"></span>
-        </div>
-
-      </div>
-
-      <button class="registration__button">
-        Изменить пароль
-      </button>
-
-    </form>
-
-  </main>
-
-  <footer class="footer">
-    <div class="footer__container">
-      <a class="footer__link" href="#">Продуктовый помощник</a>
-      <nav class="menu footer__menu">
+  <div class="root">
+    <header class="header header_height root__section">
+      <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
+            <a href="main-page-auth.html" class="menu__link">Рецепты</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link menu__link_color_white">Технологии</a>
+            <a href="page-subscriptions.html" class="menu__link">Мои подписки</a>
+          </li>
+          <li class="menu__item">
+            <a href="recipe-create.html" class="menu__link menu__link_active">Создать рецепт</a>
+          </li>
+          <li class="menu__item">
+            <a href="page-favourites.html" class="menu__link">Избранное</a>
+          </li>
+          <li class="menu__item">
+            <a href="shopping-list-auth.html" class="menu__link">Список покупок</a>
           </li>
         </ul>
+        <div class="menu__container">
+          <a href="channge-password.html" class="menu__link menu__link_margins_right">Изменить пароль</a>
+          <button class="menu__button">Выход</button>
+        </div>
       </nav>
-    </div>
-  </footer>
-</div>
-</body>
-</html>
+    </header>
 
+    <main class="recipe-create registration root__section root__section_padding_bottom">
+      <h1 class="registration__title  content-title">Создание рецепта</h1>
+      <form name="registration" class="registration__form">
+
+        <div class="registration__row-form">
+
+          <label for="oldPassword" class="registration__label">Название рецепта</label>
+          <div class="registration__input-container">
+            <input type="password" name="old-password" id="oldPassword" placeholder="Оладьи с кабачком" maxlength="20"
+              class="registration__input" required />
+            <span id="error-oldPassword" class="registration__error"></span>
+          </div>
+
+        </div>
+
+        <div class="recipe-create__row-form">
+          <p class="recipe-create__label-checkbox">Теги</p>
+          <div class="recipe-create__checkbox-container">
+            <div class="recipe-create__input-container">
+              <input type="checkbox" id="orange1" name="orange" class="recipe-create__input-orange" />
+              <label for="orange1" class="recipe-create__checkbox-orange"><span></span>Завтрак</label>
+            </div>
+            <div class="recipe-create__input-container">
+              <input type="checkbox" id="green1" name="green" class="recipe-create__input-green" />
+              <label for="green1" class="recipe-create__checkbox-green"><span></span>Обед</label>
+            </div>
+            <div class="recipe-create__input-container">
+              <input type="checkbox" id="purple1" name="purple" class="recipe-create__input-purple" />
+              <label for="purple1" class="recipe-create__checkbox-purple"><span></span>Ужин</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="registration__row-form">
+          <label for="confirmPassword" class="registration__label">Подтверждение нового&nbsp;пароля</label>
+          <div class="registration__input-container">
+            <input type="password" name="confirm-password" id="confirmPassword" maxlength="20"
+              class="registration__input" required />
+            <span id="error-confirmPassword" class="registration__error"></span>
+          </div>
+
+        </div>
+
+        <button class="registration__button">
+          Изменить пароль
+        </button>
+
+      </form>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__link" href="#">Продуктовый помощник</a>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Технологии</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

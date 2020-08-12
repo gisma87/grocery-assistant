@@ -16,26 +16,18 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link menu__link_active">Рецепты</a>
+            <a href="main-page-unauth.html" class="menu__link menu__link_active">Рецепты</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Мои подписки</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Создать рецепт</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Избранное</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Список покупок</a>
+            <a href="shopping-list-unauth.html" class="menu__link menu__link_color_grey">Список покупок</a>
           </li>
         </ul>
+        <div class="menu__container">
+          <a href="login-page.html" class="menu__link menu__link_margins_right">Войти</a>
+          <a href="registration.html" class="menu__link button button_font button_color_blue button_size_s">Создать
+            аккаунт</a>
+        </div>
       </nav>
-      <div class="header__container">
-        <button class="header__button">Изменить пароль</button>
-        <button class="header__button">Выход</button>
-      </div>
     </header>
 
     <main class="root__section">
@@ -60,8 +52,7 @@
           </section>
           <section class="recipe__block-buttons">
             <button class="button button_size_s button_color_blue button_type_plus recipe__button">Добавить
-              рецепт</button>
-            <button class="button button_size_s button_color_grey">Подписаться на автора</button>
+              в покупки</button>
           </section>
           <section class="recipe__ingredients">
             <h2 class="recipe-subtitle">
