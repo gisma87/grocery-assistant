@@ -41,59 +41,89 @@
     <main class="recipe-create root__section root__section_padding_bottom">
       <h1 class="recipe-create__title  content-title">Создание рецепта</h1>
       <form name="recipe-create" class="recipe-create__form">
-
-        <div class="recipe-create__row-form">
-
-          <label class="recipe-create__label">Название рецепта</label>
-          <div class="recipe-create__input-container">
-            <input type="text" id="namedish" placeholder="Оладьи с кабачком" maxlength="30" class="recipe-create__input"
-              required />
-            <span id="error-nameDish" class="recipe-create__error"></span>
-          </div>
-
+        <!-- <div class="recipe-create__row-form"> -->
+        <label for="namedish" class="recipe-create__label">Название рецепта</label>
+        <div class="recipe-create__input-container recipe-create__inpute-container_size_l">
+          <input type="text" id="namedish" placeholder="Оладьи с кабачком" maxlength="30"
+            class="recipe-create__input recipe-create__input_height_s" required />
+          <span id="error-nameDish" class="recipe-create__error"></span>
         </div>
+        <!-- </div> -->
 
-        <div class="recipe-create__row-form">
-          <p class="recipe-create__label-checkbox">Теги</p>
-          <div class="checkbox">
-            <div class="checkbox__input-container">
-              <input type="checkbox" id="orange1" name="orange" class="checkbox__input-orange" />
-              <label for="orange1" class="checkbox__label-orange"><span></span>Завтрак</label>
-            </div>
-            <div class="checkbox__input-container">
-              <input type="checkbox" id="green1" name="green" class="checkbox__input-green" />
-              <label for="green1" class="checkbox__label-green"><span></span>Обед</label>
-            </div>
-            <div class="checkbox__input-container">
-              <input type="checkbox" id="purple1" name="purple" class="checkbox__input-purple" />
-              <label for="purple1" class="checkbox__label-purple"><span></span>Ужин</label>
-            </div>
+        <!-- <div class="recipe-create__row-form"> -->
+        <p class="recipe-create__label-checkbox">Теги</p>
+        <div class="checkbox recipe-create__checkbox">
+          <div class="checkbox__input-container">
+            <input type="checkbox" id="orange1" name="orange" class="checkbox__input-orange" />
+            <label for="orange1" class="checkbox__label-orange"><span></span>Завтрак</label>
+          </div>
+          <div class="checkbox__input-container">
+            <input type="checkbox" id="green1" name="green" class="checkbox__input-green" />
+            <label for="green1" class="checkbox__label-green"><span></span>Обед</label>
+          </div>
+          <div class="checkbox__input-container">
+            <input type="checkbox" id="purple1" name="purple" class="checkbox__input-purple" />
+            <label for="purple1" class="checkbox__label-purple"><span></span>Ужин</label>
           </div>
         </div>
+        <!-- </div> -->
 
+        <!-- <div class="recipe-create__row-form"> -->
+        <!-- <div class="recipe-create__ingredients"> -->
+        <label for="ingredients" class="recipe-create__label">Ингридиенты</label>
         <div class="recipe-create__row-form">
-          <label for="confirmPassword" class="registration__label">Ингридиенты</label>
-          <div class="recipe-create__input-container">
-            <input type="password" name="confirm-password" id="confirmPassword" maxlength="20"
-              class="registration__input" required />
-            <span id="error-confirmPassword" class="registration__error"></span>
+          <div class="recipe-create__input-container recipe-create__inpute-container_size_m">
+            <input type="text" name="ingredients" id="ingredients" maxlength="20"
+              class="recipe-create__input recipe-create__input_height_s" required />
+            <span id="error-ingredients" class="recipe-create__error"></span>
           </div>
-
-          <div class="registration__row-form">
-            <div class="registration__input-container">
-              <input type="password" name="confirm-password" id="confirmPassword" maxlength="20"
-                class="registration__input" required />
-              <label for="confirmPassword" class="registration__label">шт.</label>
-              <span id="error-confirmPassword" class="registration__error"></span>
-            </div>
-
-
+          <!-- </div>
+          <div class="recipe-create__ingredients-count"> -->
+          <div class="recipe-create__input-container recipe-create__inpute-container_size_s">
+            <input type="text" name="ingredients-count" id="ingredientsCount" maxlength="20"
+              class="recipe-create__input recipe-create__input_height_s" required />
+            <span id="error-ingredientsCount" class="recipe-create__error"></span>
           </div>
+          <label for="ingredientsCount" class="recipe-create__label">шт.</label>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
 
-          <button class="registration__button">
-            Изменить пароль
-          </button>
 
+        <!-- <div class="recipe-create__row-form"> -->
+        <button class='recipe-create__button-add'>Добавить ингредиент</button>
+        <!-- </div> -->
+        <!-- <div class="recipe-create__row-form"> -->
+        <label for="time" class="recipe-create__label">Время приготовления</label>
+        <div class="recipe-create__row">
+          <div class="recipe-create__input-container recipe-create__inpute-container_size_xs">
+            <input type="text" name="time" id="time" maxlength="20"
+              class="recipe-create__input recipe-create__input_height_s" required />
+            <span id="error-time" class="recipe-create__error"></span>
+          </div>
+          <p class="recipe-create__time">минут</p>
+        </div>
+
+        <!-- <div class="recipe-create__row-form"> -->
+        <label for="description" class="recipe-create__label recipe-create__label_margin">Описание</label>
+        <div
+          class="recipe-create__input-container recipe-create__input-container_margin recipe-create__inpute-container_size_xl">
+          <input type="text" name="description" id="description" maxlength="20"
+            class="recipe-create__input recipe-create__input_height_l" required />
+          <span id="error-description" class="recipe-create__error"></span>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="recipe-create__row"> -->
+        <p class="recipe-create__label-addphoto">Загрузите фото</p>
+        <button
+          class='button recipe-create__button recipe-create__button_position_start button_size_s button_color_grey'>Выбрать
+          файл</button>
+        <!-- </div> -->
+
+
+        <button class="button recipe-create__button_position_center button_size_s button_color_blue button_font">
+          Создать рецепт
+        </button>
       </form>
 
     </main>
@@ -116,8 +146,4 @@
   </div>
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> develop

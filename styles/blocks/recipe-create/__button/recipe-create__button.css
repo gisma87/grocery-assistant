@@ -1,0 +1,6 @@
+@import url(./_posishion/recipe-create__button_psishion_start.css);
+@import url(./_posishion/recipe-create__button_position_center.css);
+
+.recipe-create__button {
+  color: black;
+}

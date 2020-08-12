@@ -1,0 +1,12 @@
+@import url(./_size/recipe-create__inpute-container_size_xs.css);
+@import url(./_size/recipe-create__inpute-container_size_s.css);
+@import url(./_size/recipe-create__inpute-container_size_m.css);
+@import url(./_size/recipe-create__input-container_size_l.css);
+@import url(./_size/recipe-create__inpute-container_size_xl.css);
+@import url(./_margin/recipe-create__input-container_margin.css);
+
+.recipe-create__input-container {
+  display: flex;
+  flex-direction: column;      
+  align-self: center;
+}

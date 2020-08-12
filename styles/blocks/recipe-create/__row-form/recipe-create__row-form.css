@@ -1,6 +1,8 @@
 .recipe-create__row-form {
-  max-width: 600px;
-  width: 100%;
-  display: flex;
+  display: flex; 
   justify-content: space-between;
+  max-width: 600px;
+  width: 100%;   
+  margin: 0;
+  align-items: center;
 }
