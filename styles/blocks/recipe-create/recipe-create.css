@@ -1,0 +1,14 @@
+@import url(./__row-form/recipe-create__row-form.css);
+@import url(./__label-checkbox/recipe-create__label-checkbox.css);
+@import url(./__checkbox-container/recipe-create__checkbox-container.css);
+
+
+.recipe-create {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 44px;
+}

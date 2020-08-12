@@ -1,7 +1,7 @@
-.recipe-create__input-orange {
+.checkbox__input-orange {
   display:none;
 }
-.recipe-create__input-orange + .recipe-create__checkbox-orange span {
+.checkbox__input-orange + .checkbox__label-orange span {
   display:inline-block;
   width:24px;
   height:24px;
@@ -10,6 +10,6 @@
   background:url("../../../../images/Ellipse_orange.png") left top no-repeat;
   cursor:pointer;
 }
-.recipe-create__input-orange:checked + .recipe-create__checkbox-orange span {
+.checkbox__input-orange:checked + .checkbox__label-orange span {
   background:url("../../../../images/icon-breakfast.png") left top no-repeat;
 }
