@@ -1,0 +1,15 @@
+@import url(./__recipes-list/card-shopping__recipes-list.css);
+@import url(./__image/card-shopping__image.css);
+@import url(./__link-recipe/card-shopping__link-recipe.css);
+@import url(./__recipe-item/card-shopping__recipe-item.css);
+@import url(./__revove/card-shopping__revove.css);
+
+
+.card-shopping {
+  display: flex;
+  flex-direction: column;
+  height: 100%;  
+  width: 100%;  
+  box-sizing: border-box; 
+  margin-bottom: 42px;   
+}

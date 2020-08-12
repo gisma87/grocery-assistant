@@ -1,0 +1,10 @@
+.recipe-info__time.recipe-info__time_size_l::before {
+  display: inline-block;
+  content: '';
+  width: 21px;
+  height: 21px;
+  background-image: url('../../../../images/clock.png');
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}

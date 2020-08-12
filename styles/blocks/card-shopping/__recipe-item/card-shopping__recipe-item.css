@@ -1,0 +1,18 @@
+.card-shopping__recipe-item {
+  display: flex;
+  text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000;
+    transition: opacity .5s ease;    
+    margin-bottom: 16px;
+    padding: 9px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.card-shopping__recipe-item:hover {
+  opacity: .7;
+}

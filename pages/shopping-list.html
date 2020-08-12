@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="html, css">
+  <meta name="description" content="Продуктовый помощник">
+  <link rel="stylesheet" href="../styles/shopping-list.css">
+  <title>Продуктовый помощник</title>
+</head>
+
+<body class="body">
+  <div class="root">
+    <header class="header root__section root__section_padding_bottom">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Рецепты</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Мои подписки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Создать рецепт</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Избранное</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_active">Список покупок</a>
+            <span class="menu__counter">27</span>
+          </li>
+        </ul>
+        <div class="menu__container">
+          <a href="#" class="menu__link menu__link_margins_right">Изменить пароль</a>
+          <button class="menu__button">Выход</button>
+        </div>
+      </nav>
+    </header>
+    <main class="container root__section">
+      <h1 class="content-title">Список покупок</h1>
+
+      <div class="card-shopping">
+        <ul class="card-shopping__recipes-list">
+          <li class="card-shopping__recipe-item">
+            <a class="card-shopping__link-recipe" href="#" target="_blank">
+              <img src="../images/toasts-icon.png" alt="Фото рецепта" class="card-shopping__image">
+              <div class="recipe-info">
+                <p class="recipe-info__title">Французские тосты</p>
+                <p class="recipe-info__time">20 мин.</p>
+              </div>
+            </a>
+            <button class="card-shopping__revove">Удалить</button>
+          </li>
+          <li class="card-shopping__recipe-item">
+            <a class="card-shopping__link-recipe" href="#" target="_blank">
+              <img src="../images/toast-icon.png" alt="Фото рецепта" class="card-shopping__image">
+              <div class="recipe-info">
+                <p class="recipe-info__title">Французский тост с сиропом агавы</p>
+                <p class="recipe-info__time recipe-info__time_size_l">30 мин.</p>
+              </div>
+            </a>
+            <button class="card-shopping__revove">Удалить</button>
+          </li>
+          <li class="card-shopping__recipe-item">
+            <a class="card-shopping__link-recipe" href="#" target="_blank">
+              <img src="../images/benedict-icon.png" alt="Фото рецепта" class="card-shopping__image">
+              <div class="recipe-info">
+                <p class="recipe-info__title">Вафли с яйцом «Бенедикт» и лососем</p>
+                <p class="recipe-info__time">35 мин.</p>
+              </div>
+            </a>
+            <button class="card-shopping__revove">Удалить</button>
+          </li>
+        </ul>
+      </div>
+      <button class="button button_size_s button_color_blue button_font">Скачать список</button>
+
+
+
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__link" href="#">Продуктовый помощник</a>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Технологии</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
