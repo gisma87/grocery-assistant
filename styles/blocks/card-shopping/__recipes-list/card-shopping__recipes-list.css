@@ -1,0 +1,8 @@
+.card-shopping__recipes-list {  
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 67px 0 16px;
+    padding: 0;    
+    width: 597px;
+  }
