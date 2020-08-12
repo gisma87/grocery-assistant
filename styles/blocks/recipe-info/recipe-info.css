@@ -5,9 +5,9 @@
 @import url(./__time/recipe-info__time.css);
 @import url(./__author/recipe-info__author.css);
 @import url(./__title/recipe-info__title.css);
+@import url(./_type/recipe-info_type_flex.css);
 
-.recipe-info {
-  display: flex;
+.recipe-info {  
   justify-content: center;
   flex-direction: column;
 }
