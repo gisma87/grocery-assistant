@@ -32,13 +32,19 @@
     <main class="root__section">
       <section class="mealtime">
         <h1 class="content-title">Рецепты</h1>
-        <div class="mealtime__container">
-          <button class="mealtime__button mealtime__button_type_breakfast"></button>
-          <p class="mealtime__paragraph">Завтрак</p>
-          <button class="mealtime__button mealtime__button_type_lunch"></button>
-          <p class="mealtime__paragraph">Обед</p>
-          <button class="mealtime__button mealtime__button_type_dinner"></button>
-          <p class="mealtime__paragraph">Ужин</p>
+        <div class="checkbox mealtime__checkbox">
+          <div class="checkbox__input-container">
+            <input type="checkbox" id="orange1" name="orange" class="checkbox__input-orange" checked />
+            <label for="orange1" class="checkbox__label-orange"><span></span>Завтрак</label>
+          </div>
+          <div class="checkbox__input-container">
+            <input type="checkbox" id="green1" name="green" class="checkbox__input-green" checked />
+            <label for="green1" class="checkbox__label-green"><span></span>Обед</label>
+          </div>
+          <div class="checkbox__input-container">
+            <input type="checkbox" id="purple1" name="purple" class="checkbox__input-purple" checked />
+            <label for="purple1" class="checkbox__label-purple"><span></span>Ужин</label>
+          </div>
         </div>
       </section>
       <section class="cards-container root__recipes">
