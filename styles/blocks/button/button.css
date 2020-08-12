@@ -6,6 +6,7 @@
 @import url(./_type/button_type_plus.css);
 @import url(./_type/button_type_tick.css);
 @import url(./_font/button_font.css);
+@import url(./_location/button_location_center.css);
 
 .button {
   border-radius: 6px;
@@ -18,4 +19,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }

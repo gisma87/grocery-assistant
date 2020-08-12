@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +11,34 @@
 </head>
 
 <body>
-<div class="root">
-  <header class="header root__section root__section_padding_bottom">
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="#" class="menu__link menu__link_active">Рецепты</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Список покупок</a>
-        </li>
-      </ul>
-      <div class="menu__container">
-        <a href="#" class="menu__link menu__link_margins_right">Войти</a>
-        <button class="button button_color_blue button_size_l button_font button_shift-top">Создать аккаунт</button>
-      </div>
-    </nav>
-  </header>
+  <div class="root">
+    <header class="header root__section root__section_padding_bottom">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="main-page-unauth.html" class="menu__link menu__link_color_grey">Рецепты</a>
+          </li>
+          <li class="menu__item">
+            <a href="shopping-list-unauth.html" class="menu__link menu__link_color_grey">Список покупок</a>
+          </li>
+        </ul>
+        <div class="menu__container">
+          <a href="login-page.html" class="menu__link menu__link_margins_right">Войти</a>
+          <a href="registration.html" class="button button_font button_color_blue button_size_s">Создать
+            аккаунт</a>
+        </div>
+      </nav>
+    </header>
 
-  <main class="registration root__section root__section_padding_bottom">
-    <h1 class="registration__title content-title">Регистрация</h1>
+    <main class="registration root__section root__section_padding_bottom">
+      <h1 class="content-title">Регистрация</h1>
       <form name="registration" class="registration__form">
 
         <div class="registration__row-form">
 
           <label for="name" class="registration__label">Имя</label>
           <div class="registration__input-container">
-            <input
-              type="text"
-              name="_name"
-              id="name"
-              maxlength="20"
-              class="registration__input"
-              required
-            />
+            <input type="text" name="_name" id="name" maxlength="20" class="registration__input" required />
             <span id="error-name" class="registration__error"></span>
           </div>
 
@@ -52,14 +47,7 @@
         <div class="registration__row-form">
           <label for="userName" class="registration__label">Имя пользователя</label>
           <div class="registration__input-container">
-            <input
-              type="text"
-              name="user-name"
-              id="userName"
-              maxlength="20"
-              class="registration__input"
-              required
-            />
+            <input type="text" name="user-name" id="userName" maxlength="20" class="registration__input" required />
             <span id="error-userName" class="registration__error"></span>
           </div>
 
@@ -68,14 +56,7 @@
         <div class="registration__row-form">
           <label for="email" class="registration__label">Адрес электронной почты</label>
           <div class="registration__input-container">
-            <input
-              type="email"
-              name="user-email"
-              id="email"
-              maxlength="20"
-              class="registration__input"
-              required
-            />
+            <input type="email" name="user-email" id="email" maxlength="20" class="registration__input" required />
             <span id="error-email" class="registration__error"></span>
           </div>
 
@@ -84,42 +65,34 @@
         <div class="registration__row-form">
           <label for="password" class="registration__label">Пароль</label>
           <div class="registration__input-container">
-            <input
-              type="password"
-              name="user-password"
-              id="password"
-              maxlength="20"
-              class="registration__input"
-              required
-            />
+            <input type="password" name="user-password" id="password" maxlength="20" class="registration__input"
+              required />
             <span id="error-password" class="registration__error"></span>
           </div>
 
         </div>
 
-        <button class="registration__button">
-          Создать аккаунт
-        </button>
+        <button class="button button_font button_color_blue button_size_s button_location_center">Создать аккаунт</button>
 
       </form>
 
-  </main>
-  <footer class="footer">
-    <div class="footer__container">
-      <a class="footer__link" href="#">Продуктовый помощник</a>
-      <nav class="menu footer__menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link_color_white">Технологии</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
-</div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__link" href="#">Продуктовый помощник</a>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Технологии</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
 </body>
-</html>
 
+</html>

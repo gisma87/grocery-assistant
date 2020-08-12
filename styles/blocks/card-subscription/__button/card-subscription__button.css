@@ -1,0 +1,9 @@
+.card-subscription__button {    
+  background-color: white;
+  border: none;
+  color: #4A61DD;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
