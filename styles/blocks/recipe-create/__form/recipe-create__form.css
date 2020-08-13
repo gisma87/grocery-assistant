@@ -1,0 +1,24 @@
+.recipe-create__form {  
+  display: grid;
+  grid-template-columns: 160px 370px;
+  grid-template-rows: 80px 63px auto 70px 90px 235px 120px 50px;
+  grid-template-areas:  'label-name input-name'
+                        'label-checkbox checkbox'
+                        'label-ingredients inputs-ingredients'
+                        '. button-addingredients'
+                        'label-time input-time'
+                        'label-description input-description'
+                        'label-addphoto button-addfile'
+                        'main-button main-button';
+  grid-column-gap: 72px ;
+  max-width: 770px;  
+  width: 100%;  
+  align-self: center;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin-top: 58px;
+  padding: 55px 45px 64px 69px;
+}

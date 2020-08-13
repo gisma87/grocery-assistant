@@ -1,0 +1,26 @@
+.recipe-create__tooltip .recipe-create__tooltiptext {
+  display: none;  
+  width: 100%;
+  background-color: #fff;
+  color: black;  
+  border-radius: 6px;
+  padding: 5px 10px;  
+  border: 1px solid rgba(98, 98, 98, 0.2);
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  min-height: 42px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -109px;
+}
+
+.recipe-create__tooltip:focus-within .recipe-create__tooltiptext {  
+  display: block;
+}

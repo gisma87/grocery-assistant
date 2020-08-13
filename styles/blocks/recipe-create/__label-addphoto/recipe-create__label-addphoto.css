@@ -1,0 +1,4 @@
+.recipe-create__label-addphoto {
+  display: block;  
+  grid-area: label-addphoto;
+}

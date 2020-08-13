@@ -1,0 +1,6 @@
+@import url(./_grid/recipe-create__button_grid_main-button.css.css);
+@import url(./_posititon/recipe-create__button_position_start.css);
+
+.recipe-create__button {
+  color: black;
+}

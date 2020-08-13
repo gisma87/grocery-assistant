@@ -1,0 +1,16 @@
+.recipe-create__error {
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 10px 0;
+  color: #FF0000;
+  display: none;
+  word-wrap: break-word;
+  min-height: 25px;
+}
+
+.recipe-create__error_active {
+  display: block;
+}
