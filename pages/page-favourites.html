@@ -29,6 +29,7 @@
           </li>
           <li class="menu__item">
             <a href="shopping-list-auth.html" class="menu__link">Список покупок</a>
+            <span class="menu__counter"></span>
           </li>
         </ul>
         <div class="menu__container">
@@ -71,8 +72,8 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-            <button class="button-star button-star_actived button-star_size_s"></button>
+            <button data-recipe-id="1" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-id="1" class="button-star button-star_inactived button-star_size_s"></button>
           </div>
         </div>
         <div class="card-recipe">
@@ -91,8 +92,8 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-            <button class="button-star button-star_actived button-star_size_s"></button>
+            <button data-recipe-id="2" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-id="2" class="button-star button-star_inactived button-star_size_s"></button>
           </div>
         </div>
         <div class="card-recipe">
@@ -110,8 +111,8 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-            <button class="button-star button-star_actived button-star_size_s"></button>
+            <button data-recipe-id="3" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-id="3" class="button-star button-star_inactived button-star_size_s"></button>
           </div>
         </div>
         <div class="card-recipe">
@@ -130,8 +131,8 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-            <button class="button-star button-star_actived button-star_size_s"></button>
+            <button data-recipe-id="4" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-id="4" class="button-star button-star_inactived button-star_size_s"></button>
           </div>
         </div>
         <div class="card-recipe">
@@ -150,8 +151,8 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-            <button class="button-star button-star_actived button-star_size_s"></button>
+            <button data-recipe-id="5" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-id="5" class="button-star button-star_inactived button-star_size_s"></button>
           </div>
         </div>
         <div class="card-recipe">
@@ -170,8 +171,8 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
-            <button class="button-star button-star_actived button-star_size_s"></button>
+            <button data-recipe-id="6" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-id="6" class="button-star button-star_inactived button-star_size_s"></button>
           </div>
         </div>
       </section>
@@ -201,6 +202,11 @@
       </div>
     </footer>
   </div>
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/functions/recipe.js"></script>
+  <script src="../js/functions/favourites.js"></script>
+  <script src="../js/page-favourites.js"></script>
 </body>
 
 </html>

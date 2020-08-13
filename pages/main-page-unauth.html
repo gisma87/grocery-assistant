@@ -20,6 +20,7 @@
           </li>
           <li class="menu__item">
             <a href="shopping-list-unauth.html" class="menu__link menu__link_color_grey">Список покупок</a>
+            <span class="menu__counter"></span>
           </li>
         </ul>
         <div class="menu__container">
@@ -63,7 +64,7 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-recipe-id="1" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
           </div>
         </div>
         <div class="card-recipe">
@@ -82,7 +83,7 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-recipe-id="2" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
           </div>
         </div>
         <div class="card-recipe">
@@ -100,7 +101,7 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-recipe-id="3" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
           </div>
         </div>
         <div class="card-recipe">
@@ -119,7 +120,7 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-recipe-id="4" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
           </div>
         </div>
         <div class="card-recipe">
@@ -138,7 +139,7 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-recipe-id="5" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
           </div>
         </div>
         <div class="card-recipe">
@@ -157,7 +158,7 @@
             </div>
           </div>
           <div class="card-recipe__container">
-            <button class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
+            <button data-recipe-id="6" class="button button_color_grey button_type_plus button_size_s">Добавить в покупки</button>
           </div>
         </div>
       </section>
@@ -187,6 +188,10 @@
       </div>
     </footer>
   </div>
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/functions/recipe.js"></script>
+  <script src="../js/main-page-unauth.js"></script>
 </body>
 
 </html>
