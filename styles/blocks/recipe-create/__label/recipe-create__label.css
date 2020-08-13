@@ -1,10 +1,11 @@
-@import url(./_margin/recipe-create__label_margin.css);
-@import url(./_position/recipe-create__label_position.css);
+@import url(./_grid/recipe-create__label_grid_name.css);
+@import url(./_grid/recipe-create__label_grid_ingredients.css);
+@import url(./_grid/recipe-create__label_grid_time.css);
+@import url(./_grid/recipe-create__label_grid_description.css);
 
 .recipe-create__label {
   font-style: normal;
 font-weight: normal;
 font-size: 16px;
-line-height: 35px;
-align-self: flex-start;
+line-height: 25px;
 }

@@ -1,15 +1,14 @@
-.recipe-create__button-add {
-  grid-column: 2 / 3;
-  grid-row: 4;
+.recipe-create__button-add {  
   border: none;
-  background-color: white;
-  /* text-decoration: underline;  */
-  margin-bottom: 15px;
-  margin-top: 24px;
+  background-color: white;    
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: underline;
   justify-self: start;
+  align-self: start;
+  grid-area: button-addingredients;
+  padding: 0;
+  margin-top: 20px;
 }

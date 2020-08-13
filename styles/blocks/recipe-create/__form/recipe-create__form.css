@@ -1,7 +1,15 @@
 .recipe-create__form {  
   display: grid;
   grid-template-columns: 160px 370px;
-  grid-template-rows: 80px 70px 65px 55px 90px 240px 120px 50px;
+  grid-template-rows: 80px 63px auto 70px 90px 235px 120px 50px;
+  grid-template-areas:  'label-name input-name'
+                        'label-checkbox checkbox'
+                        'label-ingredients inputs-ingredients'
+                        '. button-addingredients'
+                        'label-time input-time'
+                        'label-description input-description'
+                        'label-addphoto button-addfile'
+                        'main-button main-button';
   grid-column-gap: 72px ;
   max-width: 770px;  
   width: 100%;  

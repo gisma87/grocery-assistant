@@ -1,0 +1,5 @@
+.recipe-create__button_grid_main-button {
+  grid-area: main-button;
+  justify-self: center;    
+  margin-right: -27px;
+}

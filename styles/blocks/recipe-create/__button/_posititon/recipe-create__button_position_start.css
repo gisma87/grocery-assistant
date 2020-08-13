@@ -1,3 +1,4 @@
 .recipe-create__button_position_start {  
   justify-self: start;  
+  align-self: start;
 }

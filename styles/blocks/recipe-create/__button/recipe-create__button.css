@@ -1,5 +1,5 @@
-@import url(./_posishion/recipe-create__button_psishion_start.css);
-@import url(./_posishion/recipe-create__button_position_center.css);
+@import url(./_grid/recipe-create__button_grid_main-button.css.css);
+@import url(./_posititon/recipe-create__button_position_start.css);
 
 .recipe-create__button {
   color: black;
