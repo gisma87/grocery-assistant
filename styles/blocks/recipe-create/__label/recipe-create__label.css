@@ -1,4 +1,5 @@
 @import url(./_margin/recipe-create__label_margin.css);
+@import url(./_position/recipe-create__label_position.css);
 
 .recipe-create__label {
   font-style: normal;

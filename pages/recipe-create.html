@@ -72,10 +72,11 @@
         <!-- <div class="recipe-create__ingredients"> -->
         <label for="ingredients" class="recipe-create__label">Ингридиенты</label>
         <div class="recipe-create__row-form">
-          <div class="recipe-create__input-container recipe-create__inpute-container_size_m">
+          <div class="recipe-create__input-container recipe-create__inpute-container_size_m recipe-create__tooltip">
             <input type="text" name="ingredients" id="ingredients" maxlength="20"
               class="recipe-create__input recipe-create__input_height_s" required />
             <span id="error-ingredients" class="recipe-create__error"></span>
+            <span id="tooltiptext" class="recipe-create__tooltiptext">подсказка</span>
           </div>
           <!-- </div>
           <div class="recipe-create__ingredients-count"> -->
@@ -94,7 +95,7 @@
         <button class='recipe-create__button-add'>Добавить ингредиент</button>
         <!-- </div> -->
         <!-- <div class="recipe-create__row-form"> -->
-        <label for="time" class="recipe-create__label">Время приготовления</label>
+        <label for="time" class="recipe-create__label recipe-create__label_position">Время приготовления</label>
         <div class="recipe-create__row">
           <div class="recipe-create__input-container recipe-create__inpute-container_size_xs">
             <input type="text" name="time" id="time" maxlength="20"

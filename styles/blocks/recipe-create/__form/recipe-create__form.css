@@ -1,6 +1,7 @@
 .recipe-create__form {  
   display: grid;
   grid-template-columns: 160px 370px;
+  grid-template-rows: 80px 70px 65px 55px 90px 240px 120px 50px;
   grid-column-gap: 72px ;
   max-width: 770px;  
   width: 100%;  

@@ -12,6 +12,8 @@
 @import url(./__time/recipe-create__time.css);
 @import url(./__checkbox/recipe-create__checkbox.css);
 @import url(./__button/recipe-create__button.css);
+@import url(./__tooltipe/recipe-create__tooltip.css);
+@import url(./__tooltiptext/recipe-create__tooltipetext.css);
 
 .recipe-create {
   max-width: 1170px;
