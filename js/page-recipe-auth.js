@@ -6,10 +6,9 @@ const api = new Api({
 });
 
 // Переменные
-const recipeList = Array.from(document.querySelectorAll('.button'));
-const buttonStarList = Array.from(document.querySelectorAll('.button-star'));
-const menuCounter = document.querySelector('.menu__counter');
-let counter = 0;
+const buttonStar = document.querySelector('.button-star');
+const buttonRecipe = document.querySelector('.recipe__button');
+const buttonAuthor = document.querySelector('.button_color_grey');
 
 // Добавляет рецепт в покупки
 function addRecipeHandler() {
@@ -20,9 +19,6 @@ function addRecipeHandler() {
     iconElement.classList.remove('button_color_grey');
     iconElement.classList.add('button_type_tick', 'button_color_white');
     iconElement.textContent = 'Рецепт добавлен';
-
-    menuCounter.classList.add('menu__counter_enabled');
-    menuCounter.textContent = `${++counter}`;
 
     iconElement.removeEventListener('click', addRecipeHandler);
     iconElement.addEventListener('click', removeRecipeHandler);
@@ -42,11 +38,6 @@ function removeRecipeHandler() {
     iconElement.classList.add('button_color_grey');
     iconElement.textContent = 'Добавить в покупки';
 
-    menuCounter.textContent = `${--counter}`;
-      if (counter === 0) {
-        menuCounter.classList.remove('menu__counter_enabled');
-      }
-
     iconElement.removeEventListener('click', removeRecipeHandler);
     iconElement.addEventListener('click', addRecipeHandler);
 
@@ -56,12 +47,46 @@ function removeRecipeHandler() {
   });
 }
 
-// Добавляет в избранное
-function addFavouritesHandler() {
-  const favouritesIdId = event.target.getAttribute('data-id');
+// Подписаться на автора
+function addSubscribtionHandler() {
+  const subscribtionId = event.target.getAttribute('data-author-id');
   const iconElement = event.target;
 
-  api.addFavourites(favouritesIdId).then(() => {
+  api.addSubscribtion(subscribtionId).then(() => {
+    iconElement.textContent = 'Отписаться от автора';
+
+    iconElement.removeEventListener('click', addSubscribtionHandler);
+    iconElement.addEventListener('click', removeSubscribtionHandler);
+
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+}
+
+// Отписаться от автора
+function removeSubscribtionHandler() {
+  const subscribtionId = event.target.getAttribute('data-author-id');
+  const iconElement = event.target;
+
+  api.removeSubscribtion(subscribtionId).then(() => {
+    iconElement.textContent = 'Подписаться на автора';
+
+    iconElement.removeEventListener('click', removeSubscribtionHandler);
+    iconElement.addEventListener('click', addSubscribtionHandler);
+
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+}
+
+// Добавляет в избранное
+function addFavouritesHandler() {
+  const favouritesId = event.target.getAttribute('data-id');
+  const iconElement = event.target;
+
+  api.addFavourites(favouritesId).then(() => {
     iconElement.classList.remove('button-star_inactived');
     iconElement.classList.add('button-star_actived');
 
@@ -76,10 +101,10 @@ function addFavouritesHandler() {
 
 // Удаляет из избранного
 function removeFavouritesHandler() {
-  const favouritesId = event.target.getAttribute('data-id');
+  const subscribtionId = event.target.getAttribute('data-id');
   const iconElement = event.target;
 
-  api.removeFavourites(favouritesId).then(() => {
+  api.removeFavourites(subscribtionId).then(() => {
     iconElement.classList.remove('button-star_actived');
     iconElement.classList.add('button-star_inactived');
 
@@ -92,13 +117,8 @@ function removeFavouritesHandler() {
   });
 }
 
-// Добавляет слушатель на все кнопки
-function setEventListeners(element, event, handler) {
-  element.forEach(item => {
-    item.addEventListener(event, handler);
-  })
-}
+// Добавляет слушатели
+buttonStar.addEventListener('click', addFavouritesHandler);
+buttonRecipe.addEventListener('click', addRecipeHandler);
+buttonAuthor.addEventListener('click', addSubscribtionHandler);
 
-// Вызов функций
-setEventListeners(recipeList, 'click', addRecipeHandler);
-setEventListeners(buttonStarList, 'click', addFavouritesHandler);
