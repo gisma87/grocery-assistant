@@ -8,6 +8,7 @@
 @import url(./__link/_color/menu__link_color_white.css);
 @import url(./__link/_color/menu__link_color_grey.css);
 @import url(./__link/_margins/menu__link_margins_right.css);
+@import url(./__counter/_enabled/menu__counter_enabled.css);
 
 .menu {
   width: 100%;
