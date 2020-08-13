@@ -18,4 +18,3 @@ function setEventListeners(element, event, handler) {
 
 // Вызов функций
 setEventListeners(recipeList, 'click', addRecipeHandler);
-setEventListeners(buttonStarList, 'click', addFavouritesHandler);

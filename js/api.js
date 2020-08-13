@@ -33,20 +33,41 @@ class Api {
       .catch((err) => Promise.reject(err));
   }
 
-  addSubscribtion(subscrId) {
+  addSubscribtion(subscribtionId) {
     return fetch(`${this._options.baseUrl}/subscribtions`, {
       method: 'POST',
       headers: this._options.headers,
       body: JSON.stringify({
-        id: subscrId
+        id: subscribtionId
       }),
     })
       .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
       .catch((err) => Promise.reject(err));
   }
 
-  removeSubscribtion(subscrId) {
-    return fetch(`${this._options.baseUrl}/subscribtions/${subscrId}`, {
+  removeSubscribtion(subscribtionId) {
+    return fetch(`${this._options.baseUrl}/subscribtions/${subscribtionId}`, {
+      method: 'DELETE',
+      headers: this._options.headers,
+    })
+      .then((res) => (res.ok ? res.json() : Promise.reject(res)))
+      .catch((err) => Promise.reject(err));
+  }
+
+  addFavourites(favouritesId) {
+    return fetch(`${this._options.baseUrl}/favourites`, {
+      method: 'POST',
+      headers: this._options.headers,
+      body: JSON.stringify({
+        id: favouritesId
+      }),
+    })
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .catch((err) => Promise.reject(err));
+  }
+
+  removeFavourites(favouritesId) {
+    return fetch(`${this._options.baseUrl}/favourites/${favouritesId}`, {
       method: 'DELETE',
       headers: this._options.headers,
     })
