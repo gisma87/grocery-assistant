@@ -1,6 +1,3 @@
-@import url(./_height/recipe-create__input_height_s.css);
-@import url(./_height/recipe-create__input_height_l.css);
-
 .recipe-create__input {
   background: #FFFFFF;
   border: 0.5px solid rgba(0, 0, 0, 0.5);
@@ -8,6 +5,7 @@
   border-radius: 6px;
   padding: 0 7px;
   outline: none;
+  height: 42px;
 }
 
 .recipe-create__input:focus {

@@ -39,12 +39,12 @@
     </header>
 
     <main class="recipe-create root__section root__section_padding_bottom">
-      <h1 class="recipe-create__title  content-title">Создание рецепта</h1>
+      <h1 class="content-title">Создание рецепта</h1>
       <form name="recipe-create" class="recipe-create__form">
-        <label for="namedish" class="recipe-create__label recipe-create__label_grid_name">Название рецепта</label>
+        <label for="nameDish" class="recipe-create__label recipe-create__label_grid_name">Название рецепта</label>
         <div
           class="recipe-create__input-container recipe-create__input-container_grid_name recipe-create__inpute-container_size_l">
-          <input type="text" id="namedish" placeholder="Оладьи с кабачком" maxlength="30"
+          <input type="text" id="nameDish" placeholder="Оладьи с кабачком"
             class="recipe-create__input recipe-create__input_height_s" required />
           <span id="error-nameDish" class="recipe-create__error"></span>
         </div>
@@ -82,7 +82,7 @@
           <label for="ingredientsCount" class="recipe-create__label">шт.</label>
         </div>
 
-        <button class='recipe-create__button-add'>Добавить ингредиент</button>
+        <button type="button" class='recipe-create__button-add'>Добавить ингредиент</button>
 
         <label for="time" class="recipe-create__label recipe-create__label_grid_time">Время приготовления</label>
         <div class="recipe-create__row recipe-create__row_grid_time">
@@ -98,17 +98,21 @@
           class="recipe-create__label recipe-create__label_margin recipe-create__label_grid_description">Описание</label>
         <div
           class="recipe-create__input-container recipe-create__input-container_margin recipe-create__input-container_grid_description recipe-create__inpute-container_size_xl">
-          <input type="text" name="description" id="description"
-            class="recipe-create__input recipe-create__input_height_l" required />
+          <textarea name="description" id="description" class="recipe-create__textarea"></textarea>
           <span id="error-description" class="recipe-create__error"></span>
         </div>
 
         <p class="recipe-create__label-addphoto">Загрузите фото</p>
-        <div class="recipe-create__row recipe-create__row-form_grid_addfile">
-          <input type='file'
-            class='button recipe-create__button recipe-create__button_position_start button_size_s button_color_grey button_font'
-            value='Выбрать
-            файл' required />
+        <div class="recipe-create__row-form recipe-create__row-form_grid_addfile">
+          <label for="addFile"
+            class="button recipe-create__button recipe-create__button_position_start button_size_s button_color_grey button_font">Выбрать
+            файл</label>
+          <input type='file' name='add-file' id='addFile' class='recipe-create__input-addfile' required />
+          <div class="recipe-create__block-usefile recipe-create__block-usefile_inactive">
+            <span class="recipe-create__usefile">Cake_12.jpeg</span>
+            <button class='recipe-create__button-delite'></button>
+          </div>
+
         </div>
 
         <button class="button recipe-create__button_grid_main-button button_size_s button_color_blue button_font">
