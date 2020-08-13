@@ -1,6 +1,5 @@
 @import url(./__row-form/recipe-create__row-form.css);
 @import url(./__label-checkbox/recipe-create__label-checkbox.css);
-@import url(./__checkbox-container/recipe-create__checkbox-container.css);
 @import url(./__form/recipe-create__form.css);
 @import url(./__label/recipe-create__label.css);
 @import url(./__input-container/recipe-create__input-container.css);
@@ -14,6 +13,11 @@
 @import url(./__button/recipe-create__button.css);
 @import url(./__tooltipe/recipe-create__tooltip.css);
 @import url(./__tooltiptext/recipe-create__tooltipetext.css);
+@import url(./__input-addfile/recipe-create__input-addfile.css);
+@import url(./__button-delite/recipe-create__button-delite.css);
+@import url(./__block-usefile/recipe-create__block-usefile.css);
+@import url(./__usefile/recipe-create__usefile.css);
+@import url(./__textarea/recipe-create__textarea.css);
 
 .recipe-create {
   max-width: 1170px;
