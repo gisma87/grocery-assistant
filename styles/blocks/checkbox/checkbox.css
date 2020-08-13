@@ -7,7 +7,6 @@
 @import url(./__label-purple/checkbox__label-purple.css);
 
 .checkbox {
-  max-width: 600px;
   display: flex;
   max-width: 370px;
   width: 100%;
