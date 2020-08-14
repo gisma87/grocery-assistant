@@ -67,33 +67,31 @@
             <span>Ужин</span>
           </label>
         </div>
-
         <label for="ingredients" class="recipe-create__label recipe-create__label_grid_ingredients">Ингредиенты</label>
         <div class="recipe-create__row-form recipe-create__row-form_grid_inputs-ingredients">
           <div class="recipe-create__container-ingredients">
             <div class="recipe-create__input-container recipe-create__inpute-container_size_m recipe-create__tooltip">
-              <input type="text" name="ingredients" id="ingredients" class="recipe-create__input recipe-create__input_height_s" required/>
+              <input type="text" name="ingredients" id="ingredients"
+                class="recipe-create__input recipe-create__input_height_s" required />
               <span id="error-ingredients" class="recipe-create__error"></span>
-              <div id="tooltiptext" class="recipe-create__tooltiptext"></div>
+              <div id="tooltiptext" class="recipe-create__tooltiptext">подсказка</div>
             </div>
 
             <div class="recipe-create__input-container recipe-create__inpute-container_size_s">
-              <input type="number" name="ingredients-count" id="ingredientsCount" class="recipe-create__input recipe-create__input_height_s" required/>
+              <input type="number" name="ingredients-count" id="ingredientsCount"
+                class="recipe-create__input recipe-create__input_height_s" required />
               <span id="error-ingredientsCount" class="recipe-create__error"></span>
             </div>
             <label for="ingredientsCount" class="recipe-create__label" id="ingredientsTag">шт.</label>
           </div>
-
           <template id="tmpl">
-            <div class="recipe-create__container-ingredients ingredient-item recipe-create__row_margin">
-              <div class="recipe-create__input-container recipe-create__inpute-container_size_m recipe-create__tooltip">
-                <input type="text" class="recipe-create__ingredients-item recipe-create__input recipe-create__input_height_s recipe-create__input_bgcolor" readonly/>
+            <div class="recipe-create__container-ingredients ingredient-item">
+              <div class="recipe-create__row recipe-create__row_shadow">
+                <p class="recipe-create__ingredients-item">яблоки</p>
+                <p class="recipe-create__ingredients-count">3</p>
+                <span class="recipe-create__ingredients-tag">шт.</span>
+                <button class='recipe-create__button-delete'></button>
               </div>
-              <div class="recipe-create__input-container recipe-create__inpute-container_size_s">
-                <input type="number" class="recipe-create__ingredients-count recipe-create__input recipe-create__input_height_s recipe-create__input_bgcolor" readonly/>
-              </div>
-              <span class="recipe-create__ingredients-tag recipe-create__label">шт.</span>
-              <button class='recipe-create__button-delete'></button>
             </div>
           </template>
         </div>
@@ -103,22 +101,27 @@
         <label for="time" class="recipe-create__label recipe-create__label_grid_time">Время приготовления</label>
         <div class="recipe-create__row recipe-create__row_grid_time">
           <div class="recipe-create__input-container recipe-create__inpute-container_size_xs">
-            <input type="text" name="time" id="time" class="recipe-create__input recipe-create__input_height_s" required/>
+            <input type="text" name="time" id="time" class="recipe-create__input recipe-create__input_height_s"
+              required />
             <span id="error-time" class="recipe-create__error"></span>
           </div>
           <p class="recipe-create__time">минут</p>
         </div>
 
-        <label for="description" class="recipe-create__label recipe-create__label_margin recipe-create__label_grid_description">Описание</label>
-        <div class="recipe-create__input-container recipe-create__input-container_margin recipe-create__input-container_grid_description recipe-create__inpute-container_size_xl">
+        <label for="description"
+          class="recipe-create__label recipe-create__label_margin recipe-create__label_grid_description">Описание</label>
+        <div
+          class="recipe-create__input-container recipe-create__input-container_margin recipe-create__input-container_grid_description recipe-create__inpute-container_size_xl">
           <textarea name="description" id="description" class="recipe-create__textarea"></textarea>
           <span id="error-description" class="recipe-create__error"></span>
         </div>
 
         <p class="recipe-create__label-addphoto">Загрузите фото</p>
         <div class="recipe-create__row-form recipe-create__row-form_grid_addfile">
-          <label for="addFile" class="button recipe-create__button recipe-create__button_position_start button_size_s button_color_grey button_font">Выбрать файл</label>
-          <input type='file' name='add-file' id='addFile' class='recipe-create__input-addfile' required/>
+          <label for="addFile"
+            class="button recipe-create__button recipe-create__button_position_start button_size_s button_color_grey button_font">Выбрать
+            файл</label>
+          <input type='file' name='add-file' id='addFile' class='recipe-create__input-addfile' required />
           <div class="recipe-create__block-usefile recipe-create__block-usefile_inactive">
             <span class="recipe-create__usefile">Cake_12.jpeg</span>
             <button class='recipe-create__button-delete'></button>
@@ -126,7 +129,9 @@
 
         </div>
 
-        <button class="button recipe-create__button_grid_main-button button_size_s button_color_blue button_font">Создать рецепт</button>
+        <button class="button recipe-create__button_grid_main-button button_size_s button_color_blue button_font">
+          Создать рецепт
+        </button>
       </form>
     </main>
 
@@ -150,5 +155,6 @@
   <script src="../js/api.js"></script>
   <script src="../js/Ingredients.js"></script>
   <script src="../js/recipe-create.js"></script>
-  </body>
-  </html>
+</body>
+
+</html>
