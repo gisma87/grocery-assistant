@@ -1,7 +1,7 @@
 .recipe-create__form {
   display: grid;
   grid-template-columns: 160px 370px;
-  grid-template-rows: 80px 63px auto auto 90px 235px auto 115px;
+  grid-template-rows: 80px 63px auto 70px 90px 235px auto 115px;
   grid-template-areas:  'label-name input-name'
                         'label-checkbox checkbox'
                         'label-ingredients inputs-ingredients'
