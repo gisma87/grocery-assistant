@@ -1,18 +1,17 @@
 const menuCounter = document.querySelector('.menu__counter');
-let counter = 0;
 
 // Добавляет рецепт в покупки
 function addRecipeHandler(event) {
   const iconElement = event.target;
   const recipeId = iconElement.getAttribute('data-recipe-id');
 
-  api.addRecipe(recipeId).then(() => {
+  api.addRecipe(recipeId).then((item) => {
     iconElement.classList.remove('button_color_grey');
     iconElement.classList.add('button_type_tick', 'button_color_white');
     iconElement.textContent = 'Рецепт добавлен';
 
     menuCounter.classList.add('menu__counter_enabled');
-    menuCounter.textContent = `${++counter}`;
+    menuCounter.textContent = item.purchases.length;
 
     iconElement.removeEventListener('click', addRecipeHandler);
     iconElement.addEventListener('click', removeRecipeHandler);
@@ -27,13 +26,13 @@ function removeRecipeHandler(event) {
   const iconElement = event.target;
   const recipeId = iconElement.getAttribute('data-recipe-id');
 
-  api.removeRecipe(recipeId).then(() => {
+  api.removeRecipe(recipeId).then((item) => {
     iconElement.classList.remove('button_type_tick', 'button_color_white');
     iconElement.classList.add('button_color_grey');
     iconElement.textContent = 'Добавить в покупки';
 
-    menuCounter.textContent = `${--counter}`;
-      if (counter === 0) {
+    menuCounter.textContent = item.purchases.length;
+      if (item.purchases.length === 0) {
         menuCounter.classList.remove('menu__counter_enabled');
       }
 
