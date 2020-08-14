@@ -7,9 +7,9 @@
   line-height: 20px;
   justify-self: start;
   align-self: start;
-  /*grid-area: button-addingredients;*/
+  grid-area: button-addingredients;
   padding: 0;
-  margin-top: 20px;
+  margin: 20px 0 30px;
   transition: opacity .5s ease;
   border-bottom: 1px solid #000
 }

@@ -1,4 +1,4 @@
-.recipe-create__button-delite {
+.recipe-create__button-delete {
   cursor: pointer;
   border-style: none;
   background-color: #fff;
@@ -10,6 +10,7 @@
   background-image: url(../../../../images/icon-delite.png);
   align-self: end;
   position: absolute;
-  right: -20px;
-  top: -20px;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
 }

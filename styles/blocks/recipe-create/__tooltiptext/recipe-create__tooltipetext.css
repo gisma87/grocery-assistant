@@ -1,10 +1,13 @@
 .recipe-create__tooltip .recipe-create__tooltiptext {
-  display: none;  
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #fff;
-  color: black;  
+  color: black;
   border-radius: 6px;
-  padding: 5px 10px;  
+  padding: 5px 10px;
   border: 1px solid rgba(98, 98, 98, 0.2);
   box-sizing: border-box;
   font-style: normal;
@@ -12,7 +15,9 @@
   font-size: 16px;
   line-height: 22px;
   min-height: 42px;
-  
+  transition: all .5s .5s;
+  cursor: pointer;
+
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -21,6 +26,11 @@
   margin-left: -109px;
 }
 
-.recipe-create__tooltip:focus-within .recipe-create__tooltiptext {  
-  display: block;
+.recipe-create__tooltip:focus-within .recipe-create__tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.recipe-create__tooltiptext span:hover{
+  background-color: #D8DEFF;
 }
