@@ -15,6 +15,7 @@
   background-position: 0 1.1em;
   background-repeat: repeat-x;
   background-size: 1px;
+  transition: opacity .5s ease;
   outline: none;
 }
 
