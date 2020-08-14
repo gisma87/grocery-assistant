@@ -1,0 +1,6 @@
+.checkbox__input_color_orange:checked + .checkbox__span_color_orange {
+  background-color:#E26C2D;
+  background-image: url('../../../../../images/vector.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}

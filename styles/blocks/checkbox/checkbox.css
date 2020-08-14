@@ -1,10 +1,12 @@
-@import url(./__input-green/checkbox__input-green.css);
-@import url(./__input-orange/checkbox__input-orange.css);
-@import url(./__input-purple/checkbox__input-purple.css);
-@import url(./__input-container/checkbox__input-container.css);
-@import url(./__label-green/checkbox__label-green.css);
-@import url(./__label-orange/checkbox__label-orange.css);
-@import url(./__label-purple/checkbox__label-purple.css);
+@import url('./__input/checkbox__input.css');
+@import url('./__input/_color/checkbox__input_color_green.css');
+@import url('./__input/_color/checkbox__input_color_orange.css');
+@import url('./__input/_color/checkbox__input_color_purple.css');
+@import url('./__span/checkbox__span.css');
+@import url('./__span/_color/checkbox__span_color_green.css');
+@import url('./__span/_color/checkbox__span_color_orange.css');
+@import url('./__span/_color/checkbox__span_color_purple.css');
+@import url('./__label/checkbox__label.css');
 
 .checkbox {
   display: flex;
