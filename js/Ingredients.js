@@ -89,6 +89,8 @@ class Ingredients {
         const even = (element) => element.title === this.ingredients.value;
         if (result.some(even)) {
           this.createIngredient(this.ingredients.value, this.ingredientsCount.value, this.ingredientsTag.textContent);
+          this.ingredients.value = '';
+          this.ingredientsCount.value = '';
         }
       })
       .catch(err => {
