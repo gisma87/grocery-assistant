@@ -12,6 +12,16 @@ class Api {
       .catch((err) => Promise.reject(err.status));
   }
 
+  // проверяет ингридиенты по запросу query
+  getIngredients(query) {
+    return fetch(`${this._options.baseUrl}/ingredients?query=${query}`, {
+      method: 'GET',
+      headers: this._options.headers
+    })
+      .then((res) => (res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`)))
+      .catch((err) => Promise.reject(err.status));
+  }
+
   addRecipe(recipeId) {
     return fetch(`${this._options.baseUrl}/purchases`, {
       method: 'POST',
