@@ -4,8 +4,8 @@ function addFavouritesHandler() {
   const iconElement = event.target;
 
   api.addFavourites(favouritesIdId).then(() => {
-    iconElement.classList.remove('button-star_inactived');
-    iconElement.classList.add('button-star_actived');
+    iconElement.classList.remove('button-star_inactive');
+    iconElement.classList.add('button-star_active');
 
     iconElement.removeEventListener('click', addFavouritesHandler);
     iconElement.addEventListener('click', removeFavouritesHandler);
@@ -22,8 +22,8 @@ function removeFavouritesHandler() {
   const iconElement = event.target;
 
   api.removeFavourites(favouritesId).then(() => {
-    iconElement.classList.remove('button-star_actived');
-    iconElement.classList.add('button-star_inactived');
+    iconElement.classList.remove('button-star_active');
+    iconElement.classList.add('button-star_inactive');
 
     iconElement.removeEventListener('click', removeFavouritesHandler);
     iconElement.addEventListener('click', addFavouritesHandler);
