@@ -132,3 +132,16 @@ class Ingredients {
 
 }
 new Ingredients(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient, ingredientsItems);
+
+const containerFileAdd = document.querySelector('.recipe-create__block-usefile');
+const spanFileName = document.querySelector('.recipe-create__usefile');
+const fileAdd = document.querySelector('#addFile');
+const fileName = fileAdd.value;
+const buttonFileAdd = document.querySelector('.recipe-create__button');
+
+function pasteFileName() {
+  spanFileName.textContent = fileName.replace(/.*\\/, "");
+  containerFileAdd.classList.add('recipe-create__block-usefile_active');
+}
+
+buttonFileAdd.addEventListener('click', pasteFileName);
