@@ -2,6 +2,7 @@
 @import url('./_grid/recipe-create__label_grid_ingredients.css');
 @import url('./_grid/recipe-create__label_grid_time.css');
 @import url('./_grid/recipe-create__label_grid_description.css');
+@import url('./_margin/recipe-create__label_margin.css');
 
 .recipe-create__label {
   font-style: normal;
