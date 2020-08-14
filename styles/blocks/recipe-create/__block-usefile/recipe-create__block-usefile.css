@@ -2,5 +2,7 @@
 @import url(./_inactive/recipe-create__block-usefile_inactive.css);
 
 .recipe-create__block-usefile {
-  align-self: center;    
+  display: none;
+  position: relative;
+  align-self: center;
 }
