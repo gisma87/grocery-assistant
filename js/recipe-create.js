@@ -145,3 +145,12 @@ function pasteFileName() {
 }
 
 buttonFileAdd.addEventListener('click', pasteFileName);
+
+const buttonDel = document.querySelector('.recipe-create__button-delite');
+
+function delFile() {
+  fileAdd.value = '';
+  containerFileAdd.classList.remove('recipe-create__block-usefile_active');
+}
+
+buttonDel.addEventListener('click', delFile);
