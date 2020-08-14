@@ -1,5 +1,5 @@
-@import url(./_grid/recipe-create__row_grid_time.css);
-@import url(./_shadow/recipe-create__row_shadow.css);
+@import url('./_grid/recipe-create__row_grid_time.css');
+@import url('./_shadow/recipe-create__row_shadow.css');
 
 .recipe-create__row {
   display: flex;

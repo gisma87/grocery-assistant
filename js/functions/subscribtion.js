@@ -1,7 +1,7 @@
 // Подписаться на автора
-function addSubscribtionHandler() {
-  const subscribtionId = event.target.getAttribute('data-author-id');
+function addSubscribtionHandler(event) {
   const iconElement = event.target;
+  const subscribtionId = iconElement.getAttribute('data-author-id');
 
   api.addSubscribtion(subscribtionId).then(() => {
     iconElement.textContent = 'Отписаться от автора';
@@ -16,9 +16,9 @@ function addSubscribtionHandler() {
 }
 
 // Отписаться от автора
-function removeSubscribtionHandler() {
-  const subscribtionId = event.target.getAttribute('data-author-id');
+function removeSubscribtionHandler(event) {
   const iconElement = event.target;
+  const subscribtionId = iconElement.getAttribute('data-author-id');
 
   api.removeSubscribtion(subscribtionId).then(() => {
     iconElement.textContent = 'Подписаться на автора';

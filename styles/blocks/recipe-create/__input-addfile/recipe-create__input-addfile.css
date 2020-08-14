@@ -1,8 +1,8 @@
 .recipe-create__input-addfile {
   opacity: 0;
-    position: absolute;
-    z-index: -1;
-    overflow: hidden;
-    width: 0.4px;
-    height: 0.4px;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: .4px;
+  height: .4px;
 }

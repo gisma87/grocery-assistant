@@ -1,5 +1,4 @@
-.recipe-create__button-add {
-  border: none;
+.recipe-create__ingredients-items {
   background-color: #FFF;
   font-style: normal;
   font-weight: normal;
@@ -9,11 +8,14 @@
   align-self: start;
   grid-area: button-addingredients;
   padding: 0;
-  margin: 20px 0 30px;
+  margin: 15px 0 15px;
   transition: opacity .5s ease;
-  border-bottom: 1px solid #000
 }
 
-.recipe-create__button-add:hover {
-  opacity: .7;
+.recipe-create__ingredients-items span {
+  margin: 0;
+}
+
+.recipe-create__ingredients-items span:before {
+  content: '-  ';
 }
