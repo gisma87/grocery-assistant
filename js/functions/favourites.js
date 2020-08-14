@@ -1,9 +1,9 @@
 // Добавляет в избранное
-function addFavouritesHandler() {
-  const favouritesIdId = event.target.getAttribute('data-id');
+function addFavouritesHandler(event) {
   const iconElement = event.target;
+  const favouritesId = iconElement.getAttribute('data-id');
 
-  api.addFavourites(favouritesIdId).then(() => {
+  api.addFavourites(favouritesId).then(() => {
     iconElement.classList.remove('button-star_inactive');
     iconElement.classList.add('button-star_active');
 
@@ -17,9 +17,9 @@ function addFavouritesHandler() {
 }
 
 // Удаляет из избранного
-function removeFavouritesHandler() {
-  const favouritesId = event.target.getAttribute('data-id');
+function removeFavouritesHandler(event) {
   const iconElement = event.target;
+  const favouritesId = iconElement.getAttribute('data-id');
 
   api.removeFavourites(favouritesId).then(() => {
     iconElement.classList.remove('button-star_active');
