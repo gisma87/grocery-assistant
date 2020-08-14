@@ -43,14 +43,14 @@ class Ingredients {
     const ingredientsCount = fragment.querySelector('.recipe-create__ingredients-count');
     const ingredientsTag = fragment.querySelector('.recipe-create__ingredients-tag');
 
-    ingredientsItem.textContent = item;
-    ingredientsCount.textContent = count;
+    ingredientsItem.value = item;
+    ingredientsCount.value = count;
     ingredientsTag.textContent = tag;
 
     const template = fragment.cloneNode(true);
 
     template.querySelector('.recipe-create__button-delete').addEventListener('click', this.deleteItem.bind(this));
-    this.containerIngredientItems.appendChild(template);
+    this.containerIngredientItems.prepend(template);
   }
 
 
@@ -93,8 +93,6 @@ class Ingredients {
       })
       .catch(err => {
         console.log(`Ошибка: ${err}`);
-        errorIngredients.textContent = err;
-        errorIngredients.classList.add('.recipe-create__error_active');
       })
   }
 
@@ -110,8 +108,6 @@ class Ingredients {
         })
         .catch(err => {
           console.log(`Ошибка: ${err}`);
-          errorIngredients.textContent = err;
-          errorIngredients.classList.add('.recipe-create__error_active');
         })
     }
   }
