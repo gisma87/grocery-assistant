@@ -11,7 +11,8 @@
   padding: 0;
   margin: 20px 0 30px;
   transition: opacity .5s ease;
-  border-bottom: 1px solid #000
+  border-bottom: 1px solid #000;
+  outline: none;
 }
 
 .recipe-create__button-add:hover {
