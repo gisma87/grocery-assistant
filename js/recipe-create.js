@@ -1,4 +1,4 @@
-//  input куда вводятся ингредиенты
+// input куда вводятся ингредиенты
 const ingredients = document.querySelector('#ingredients');
 
 // поле ошибки под input ингредиентов
