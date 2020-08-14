@@ -1,5 +1,8 @@
 .recipe-create__tooltip .recipe-create__tooltiptext {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #FFF;
   color: #000;
@@ -12,6 +15,8 @@
   font-size: 16px;
   line-height: 22px;
   min-height: 42px;
+  transition: all .5s .5s;
+  cursor: pointer;
 
   /* Position the tooltip */
   position: absolute;
@@ -22,5 +27,10 @@
 }
 
 .recipe-create__tooltip:focus-within .recipe-create__tooltiptext {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.recipe-create__tooltiptext span:hover{
+  background-color: #D8DEFF;
 }

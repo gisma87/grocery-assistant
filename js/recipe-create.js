@@ -7,15 +7,17 @@ const errorIngredients = document.querySelector('#error-ingredients');
 // выпадающий список массива найденных по данному запросу ингредиентов arr[i].title
 const ingredientsList = document.querySelector('.recipe-create__tooltiptext');
 
-// поле количественной единицы ингредиента - arr[i].dimension
-const ingredientsCount = document.querySelector('#ingredientsCount');
+// label количественной единицы ингредиента (шт, гр, мл) - arr[i].dimension
+const ingredientsTag = document.querySelector('#ingredientsTag');
 
-// поле - список для добавления ингредиентов после нажатия кнопки 'Добавить ингредиент'
-const ingredientsItems = document.querySelector('.recipe-create__ingredients-items');
+// поле - количество ингредиента - цифра
+const ingredientsCount = document.querySelector('#ingredientsCount');
 
 // кнопка 'Добавить ингредиент'
 const buttonAddIngredient = document.querySelector('.recipe-create__button-add');
 
+// Контейнер для ингредиентов - сюда добавляются по нажатию "Добавить ингредиент"
+const containerIngredientItems = document.querySelector('.recipe-create__row-form_grid_inputs-ingredients');
 
 class Api {
   constructor(options) {
@@ -40,18 +42,19 @@ const api = new Api({
 });
 
 class Ingredients {
-  constructor(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient, ingredientsItems) {
+  constructor(api, ingredients, ingredientsCount, ingredientsTag, ingredientsList, containerIngredientItems, buttonAddIngredient) {
     this.api = api;
     this.ingredientsList = ingredientsList;
     this.ingredients = ingredients;
+    this.ingredientsTag = ingredientsTag;
     this.ingredientsCount = ingredientsCount;
     this.buttonAddIngredient = buttonAddIngredient;
-    this.ingredientsItems = ingredientsItems;
+    this.containerIngredientItems = containerIngredientItems;
     this.debounceSearchIngredient = this.debounce(this.searchIngredient.bind(this), 1000);
 
-    this.buttonAddIngredient.addEventListener('click', this.addIngredient);
+    this.buttonAddIngredient.addEventListener('click', this.addIngredient.bind(this));
     this.ingredients.addEventListener('input', this.debounceSearchIngredient);
-    this.ingredientsList.addEventListener('focus', this.pasteIngredient);
+    this.ingredientsList.addEventListener('click', this.pasteIngredient.bind(this));
   }
 
   //выполняет функцию f через время t от последнего вызова
@@ -76,6 +79,31 @@ class Ingredients {
     domElement.prepend(paragraph);
   }
 
+  createIngredient(item, count, tag) {
+    const tmpl = document.querySelector('#tmpl');
+    const fragment = (tmpl.content).cloneNode(true);
+    const ingredientsItem = fragment.querySelector('.recipe-create__ingredients-item');
+    const ingredientsCount = fragment.querySelector('.recipe-create__ingredients-count');
+    const ingredientsTag = fragment.querySelector('.recipe-create__ingredients-tag');
+
+    ingredientsItem.textContent = item;
+    ingredientsCount.textContent = count;
+    ingredientsTag.textContent = tag;
+
+    const template = fragment.cloneNode(true);
+
+    template.querySelector('.recipe-create__button-delete').addEventListener('click', this.deleteItem.bind(this));
+    this.containerIngredientItems.appendChild(template);
+  }
+
+
+
+  deleteItem(event) {
+    if (event.target.matches('.recipe-create__button-delete')) {
+      const ingredient = (event.target).closest('.ingredient-item');
+      this.containerIngredientItems.removeChild(ingredient);
+    }
+  }
 
   // посылаем запрос с символами и получаем массив элементов где в array[i].title есть эти символы
   searchIngredient() {
@@ -83,11 +111,11 @@ class Ingredients {
     this.api.getIngredients(this.ingredients.value)
       .then(result => {
         result.forEach((item, i) => {
-          this.addIngredientTextElement(item.title, this.ingredientsList, i)
+          this.addIngredientTextElement(item.title, this.ingredientsList, i + 1)
         });
         if (result.length === 1) {
           this.ingredients.value = result[0].title;
-          this.ingredientsCount.value = result[0].dimension;
+          this.ingredientsTag.textContent = result[0].dimension;
         }
       })
       .catch(err => {
@@ -97,13 +125,13 @@ class Ingredients {
       })
   }
 
-  // если текст в поле ингредиента соответствует какому-нибудь arr[i].title, то добавляет его в this.ingredientsItems в теге span
+  // если текст в поле ингредиента соответствует какому-нибудь arr[i].title, то добавляет его в this.ingredientsCount в теге span
   addIngredient() {
     this.api.getIngredients(this.ingredients.value)
       .then(result => {
         const even = (element) => element.title === this.ingredients.value;
         if (result.some(even)) {
-          this.addIngredientTextElement(this.ingredients.value, this.ingredientsItems);
+          this.createIngredient(this.ingredients.value, this.ingredientsCount.value, this.ingredientsTag.textContent);
         }
       })
       .catch(err => {
@@ -116,12 +144,12 @@ class Ingredients {
   // вставляем данные из всплывающего списка в input ingredient
   pasteIngredient(event) {
     if (event.target.hasAttribute('data-id')) {
-      let id = event.target.getAttribute('data-id');
+      let id = event.target.getAttribute('data-id') - 1;
 
       this.api.getIngredients(this.ingredients.value)
         .then(result => {
           this.ingredients.value = result[id].title;
-          this.ingredientsCount.value = result[id].dimension;
+          this.ingredientsTag.textContent = result[id].dimension;
         })
         .catch(err => {
           console.log(`Ошибка: ${err}`);
@@ -133,7 +161,7 @@ class Ingredients {
 
 }
 
-new Ingredients(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient, ingredientsItems);
+new Ingredients(api, ingredients, ingredientsCount, ingredientsTag, ingredientsList, containerIngredientItems, buttonAddIngredient);
 
 // контейнер div со span'ом-название загружаемого фала и кнопка удаления этого файла - по умолчанию display: none
 const containerFileAdd = document.querySelector('.recipe-create__block-usefile');
@@ -149,12 +177,13 @@ const buttonFileAdd = document.querySelector('.recipe-create__button');
 
 // вставляет название загружаемого файла в нужный блок, и делает его видимым.
 function pasteFileName() {
-  spanFileName.textContent = fileAdd.value.replace(/.*\\/, "");
   containerFileAdd.classList.add('recipe-create__block-usefile_active');
+  const fileName = fileAdd.value.replace(/.*\\/, "");
+  return spanFileName.textContent = fileName;
 }
 
 // кнопка удаления загружаемого файла
-const buttonDel = document.querySelector('.recipe-create__button-delite');
+const buttonDel = document.querySelector('.recipe-create__button-delete');
 
 // удаляет файл и скрывает блок с названием
 function delFile() {
