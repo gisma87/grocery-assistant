@@ -1,9 +1,21 @@
+// input куда вводятся ингредиенты
 const ingredients = document.querySelector('#ingredients');
+
+// поле ошибки под input ингредиентов
 const errorIngredients = document.querySelector('#error-ingredients');
+
+// выпадающий список массива найденных по данному запросу ингредиентов arr[i].title
 const ingredientsList = document.querySelector('.recipe-create__tooltiptext');
+
+// поле количественной единицы ингредиента - arr[i].dimension
 const ingredientsCount = document.querySelector('#ingredientsCount');
+
+// поле - список для добавления ингредиентов после нажатия кнопки 'Добавить ингредиент'
 const ingredientsItems = document.querySelector('.recipe-create__ingredients-items');
+
+// кнопка 'Добавить ингредиент'
 const buttonAddIngredient = document.querySelector('.recipe-create__button-add');
+
 
 class Api {
   constructor(options) {
@@ -12,10 +24,10 @@ class Api {
 
   getIngredients(query) {
     return fetch(`${this._options.baseUrl}/ingredients?query=${query}`, {
-      // method: 'GET',
-      headers: this._options.headers,
+      method: 'GET',
+      headers: this._options.headers
     })
-      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then((res) => (res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`)))
       .catch((err) => Promise.reject(err.status));
   }
 }
@@ -28,19 +40,21 @@ const api = new Api({
 });
 
 class Ingredients {
-  constructor(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient) {
+  constructor(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient,ingredientsItems) {
     this.api = api;
     this.ingredientsList = ingredientsList;
     this.ingredients = ingredients;
     this.ingredientsCount = ingredientsCount;
     this.buttonAddIngredient = buttonAddIngredient;
+    this.ingredientsItems = ingredientsItems;
     this.debounceSearchIngredient = this.debounce(this.searchIngredient.bind(this), 1000);
 
     this.buttonAddIngredient.addEventListener('click', this.addIngredient);
-    this.ingredients.addEventListener('input', this.debounceSearchIngredient.bind(this));
+    this.ingredients.addEventListener('input', this.debounceSearchIngredient);
     this.ingredientsList.addEventListener('focus', this.pasteIngredient);
   }
 
+  //выполняет функцию f через время t от последнего вызова
   debounce(f, t) {
     return function () {
       let previousCall = this.lastCall;
@@ -66,7 +80,7 @@ class Ingredients {
   // посылаем запрос с символами и получаем массив элементов где в array[i].title есть эти символы
   searchIngredient() {
     this.ingredientsList.textContent = '';
-    this.api.getIngredients(this.ingredients)
+    this.api.getIngredients(this.ingredients.value)
       .then(result => {
         result.forEach((item, i) => {
           this.addIngredientTextElement(item.title, this.ingredientsList, i)
@@ -83,11 +97,13 @@ class Ingredients {
       })
   }
 
+  // если текст в поле ингредиента соответствует какому-нибудь arr[i].title, то добавляет его в this.ingredientsItems в теге span
   addIngredient() {
-    this.api.getIngredients(this.ingredients)
+    this.api.getIngredients(this.ingredients.value)
       .then(result => {
-        if (this.ingredientsList.textContent === result[0].title || ingredients.value === result[0].title) {
-          this.addIngredientTextElement(result[0].title, ingredientsItems);
+        const even = (element) => element.title === this.ingredients.value;
+        if (result.some(even)) {
+          this.addIngredientTextElement(this.ingredients.value, this.ingredientsItems);
         }
       })
       .catch(err => {
@@ -101,7 +117,7 @@ class Ingredients {
     if (event.target.hasAttribute('data-id')) {
       let id = event.target.getAttribute('data-id');
 
-      this.api.getIngredients(this.ingredients)
+      this.api.getIngredients(this.ingredients.value)
         .then(result => {
           this.ingredients.value = result[id].title;
           this.ingredientsCount.value = result[id].dimension;
@@ -115,4 +131,4 @@ class Ingredients {
   }
 
 }
-new Ingredients(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient);
+new Ingredients(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient, ingredientsItems);
