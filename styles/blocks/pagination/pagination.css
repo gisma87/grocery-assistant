@@ -1,7 +1,7 @@
-@import url(./__button/pagination__button.css);
-@import url(./__button/_type/pagination__button_type_left.css);
-@import url(./__button/_type/pagination__button_type_right.css);
-@import url(./__button/_active/pagination__button_active.css);
+@import url('./__button/pagination__button.css');
+@import url('./__button/_type/pagination__button_type_left.css');
+@import url('./__button/_type/pagination__button_type_right.css');
+@import url('./__button/_active/pagination__button_active.css');
 
 .pagination {
   display: flex;
