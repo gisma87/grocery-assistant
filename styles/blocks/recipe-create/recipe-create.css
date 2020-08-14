@@ -20,8 +20,8 @@
 @import url('./__block-usefile/_active/recipe-create__block-usefile_active.css');
 @import url('./__usefile/recipe-create__usefile.css');
 @import url('./__textarea/recipe-create__textarea.css');
-@import url('./__input/_bgcolor/recipe-create__input_bgcolor.css');
-@import url('__row/_margin/recipe-create__row_margin.css');
+@import url('./__ingredients-item/recipe-create__ingredients-item.css');
+@import url('./__ingredients-count/recipe-create__ingredients-count.css');
 
 .recipe-create {
   max-width: 1170px;
