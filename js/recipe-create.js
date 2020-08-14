@@ -40,7 +40,7 @@ const api = new Api({
 });
 
 class Ingredients {
-  constructor(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient,ingredientsItems) {
+  constructor(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient, ingredientsItems) {
     this.api = api;
     this.ingredientsList = ingredientsList;
     this.ingredients = ingredients;
@@ -69,7 +69,7 @@ class Ingredients {
   // добавляем text в span с data-id = id, и вставляем в domElement
   addIngredientTextElement(text, domElement, id) {
     const paragraph = document.createElement('span');
-    if(id) {
+    if (id) {
       paragraph.setAttribute('data-id', id);
     }
     paragraph.textContent = text;
@@ -85,7 +85,7 @@ class Ingredients {
         result.forEach((item, i) => {
           this.addIngredientTextElement(item.title, this.ingredientsList, i)
         });
-        if(result.length === 1) {
+        if (result.length === 1) {
           this.ingredients.value = result[0].title;
           this.ingredientsCount.value = result[0].dimension;
         }
@@ -113,6 +113,7 @@ class Ingredients {
       })
   }
 
+  // вставляем данные из всплывающего списка в input ingredient
   pasteIngredient(event) {
     if (event.target.hasAttribute('data-id')) {
       let id = event.target.getAttribute('data-id');
@@ -131,17 +132,35 @@ class Ingredients {
   }
 
 }
+
 new Ingredients(api, ingredients, ingredientsCount, ingredientsList, buttonAddIngredient, ingredientsItems);
 
+// контейнер div со span'ом-название загружаемого фала и кнопка удаления этого файла - по умолчанию display: none
 const containerFileAdd = document.querySelector('.recipe-create__block-usefile');
+
+// span с названием загружаемого файла
 const spanFileName = document.querySelector('.recipe-create__usefile');
+
+// input[type='file']
 const fileAdd = document.querySelector('#addFile');
-const fileName = fileAdd.value;
+
+// кнопка 'Выбрать файл' - label для input[type='file']
 const buttonFileAdd = document.querySelector('.recipe-create__button');
 
+// вставляет название загружаемого файла в нужный блок, и делает его видимым.
 function pasteFileName() {
-  spanFileName.textContent = fileName.replace(/.*\\/, "");
+  spanFileName.textContent = fileAdd.value.replace(/.*\\/, "");
   containerFileAdd.classList.add('recipe-create__block-usefile_active');
 }
 
+// кнопка удаления загружаемого файла
+const buttonDel = document.querySelector('.recipe-create__button-delite');
+
+// удаляет файл и скрывает блок с названием
+function delFile() {
+  fileAdd.value = '';
+  containerFileAdd.classList.remove('recipe-create__block-usefile_active');
+}
+
 buttonFileAdd.addEventListener('click', pasteFileName);
+buttonDel.addEventListener('click', delFile);
