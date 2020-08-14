@@ -1,4 +1,6 @@
-.recipe-create__button_position_start {  
-  justify-self: start;  
+.recipe-create__button_position_start {
+  justify-self: start;
   align-self: start;
+  min-width: 140px;
+  padding: 15px 20px;
 }
