@@ -52,20 +52,23 @@
 
       <p class="recipe-create__label-checkbox">Теги</p>
       <div class="checkbox recipe-create__checkbox">
-        <div class="checkbox__input-container">
-          <input type="checkbox" id="orange1" name="orange" class="checkbox__input-orange"/>
-          <label for="orange1" class="checkbox__label-orange"><span></span>Завтрак</label>
-        </div>
-        <div class="checkbox__input-container">
-          <input type="checkbox" id="green1" name="green" class="checkbox__input-green"/>
-          <label for="green1" class="checkbox__label-green"><span></span>Обед</label>
-        </div>
-        <div class="checkbox__input-container">
-          <input type="checkbox" id="purple1" name="purple" class="checkbox__input-purple"/>
-          <label for="purple1" class="checkbox__label-purple"><span></span>Ужин</label>
-        </div>
+        <label for="orange1" class="checkbox__label">
+          <input type="checkbox" id="orange1" name="orange" class="checkbox__input checkbox__input_color_orange" checked />
+          <span class="checkbox__span checkbox__span_color_orange"></span>
+          <span>Завтрак</span>
+        </label>
+        <label for="green1" class="checkbox__label">
+          <input type="checkbox" id="green1" name="green" class="checkbox__input checkbox__input_color_green" checked />
+          <span class="checkbox__span checkbox__span_color_green"></span>
+          <span>Обед</span>
+        </label>
+        <label for="purple1" class="checkbox__label">
+          <input type="checkbox" id="purple1" name="purple" class="checkbox__input checkbox__input_color_purple" checked />
+          <span class="checkbox__span checkbox__span_color_purple"></span>
+          <span>Ужин</span>
+        </label>
       </div>
-
+    
       <label for="ingredients" class="recipe-create__label recipe-create__label_grid_ingredients">Ингредиенты</label>
       <div class="recipe-create__row-form recipe-create__row-form_grid_inputs-ingredients">
         <div class="recipe-create__container-ingredients">

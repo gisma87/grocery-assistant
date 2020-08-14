@@ -1,15 +1,14 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/font.css);
-@import url(./blocks/root/root.css);
-@import url(./blocks/header/header.css);
-@import url(./blocks/menu/menu.css);
-@import url(./blocks/footer/footer.css);
-@import url(./blocks/button/button.css);
-@import url(./blocks/button/_font/button_font.css);
-@import url(./blocks/button/_shift-top/button_shift-top.css);
-@import url(./blocks/content-title/content-title.css);
-@import url(./blocks/recipe-create/recipe-create.css);
-@import url(./blocks/checkbox/checkbox.css);
+@import url('../vendor/normalize.css');
+@import url('../vendor/font.css');
+@import url('./blocks/root/root.css');
+@import url('./blocks/header/header.css');
+@import url('./blocks/menu/menu.css');
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/button/button.css');
+@import url('./blocks/button/_font/button_font.css');
+@import url('./blocks/content-title/content-title.css');
+@import url('./blocks/recipe-create/recipe-create.css');
+@import url('./blocks/checkbox/checkbox.css');
 
 
 

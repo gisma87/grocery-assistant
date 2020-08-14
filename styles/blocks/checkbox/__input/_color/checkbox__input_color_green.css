@@ -1,0 +1,6 @@
+.checkbox__input_color_green:checked + .checkbox__span_color_green {
+  background-color:#49B64E;
+  background-image: url('../../../../../images/vector.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
