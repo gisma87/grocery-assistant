@@ -1,13 +1,13 @@
 .recipe-create__button-delite {
   cursor: pointer;
   border-style: none;
-  background-color: #fff;
+  background-color: #FFF;
   background-size: cover;
   background-position: center;
   padding: 0;
   width: 21px;
   height: 21px;
-  background-image: url(../../../../images/icon-delite.png);
+  background-image: url('../../../../images/icon-delite.png');
   align-self: end;
   position: absolute;
   right: -20px;

@@ -2,9 +2,9 @@ const menuCounter = document.querySelector('.menu__counter');
 let counter = 0;
 
 // Добавляет рецепт в покупки
-function addRecipeHandler() {
-  const recipeId = event.target.getAttribute('data-recipe-id');
+function addRecipeHandler(event) {
   const iconElement = event.target;
+  const recipeId = iconElement.getAttribute('data-recipe-id');
 
   api.addRecipe(recipeId).then(() => {
     iconElement.classList.remove('button_color_grey');
@@ -23,9 +23,9 @@ function addRecipeHandler() {
 }
 
 // Удаляет рецепт из покупок
-function removeRecipeHandler() {
-  const recipeId = event.target.getAttribute('data-recipe-id');
+function removeRecipeHandler(event) {
   const iconElement = event.target;
+  const recipeId = iconElement.getAttribute('data-recipe-id');
 
   api.removeRecipe(recipeId).then(() => {
     iconElement.classList.remove('button_type_tick', 'button_color_white');

@@ -20,6 +20,7 @@
           </li>
           <li class="menu__item">
             <a href="shopping-list-unauth.html" class="menu__link menu__link_color_grey">Список покупок</a>
+            <span class="menu__counter"></span>
           </li>
         </ul>
         <div class="menu__container">
@@ -39,10 +40,6 @@
           <section class="recipe__header">
             <div class="recipe__block-title">
               <h1 class="content-title">Французские тосты</h1>
-              <div class="button-star button-star_inactived button-star_size_l"><span
-                  class="button-star__tooltip">Добавить
-                  в
-                  избранное</span></div>
             </div>
             <div class="recipe-info recipe__recipe-info">
               <span class="recipe-info__mealtime recipe-info__mealtime_type_breakfast">Завтрак</span>
@@ -51,7 +48,7 @@
             </div>
           </section>
           <section class="recipe__block-buttons">
-            <button class="button button_size_s button_color_blue button_type_plus recipe__button">Добавить
+            <button data-recipe-id="1" class="button button_size_s button_color_blue button_type_plus recipe__button">Добавить
               в покупки</button>
           </section>
           <section class="recipe__ingredients">
@@ -99,6 +96,10 @@
       </div>
     </footer>
   </div>
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/functions/recipe.js"></script>
+  <script src="../js/page-recipe-unauth.js"></script>
 </body>
 
 </html>

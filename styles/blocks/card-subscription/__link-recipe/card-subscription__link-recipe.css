@@ -1,10 +1,10 @@
 .card-subscription__link-recipe {
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
-  color: black;
+  color: #000;
   text-decoration: none;
   padding: 9px 0;
   box-sizing: border-box;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEE;
 }

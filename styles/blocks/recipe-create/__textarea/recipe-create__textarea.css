@@ -1,12 +1,12 @@
 .recipe-create__textarea {
   min-height: 184px;
   resize: none;
-  background: #FFFFFF;
+  background: #FFF;
   border: 0.5px solid rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   border-radius: 6px;
   padding: 7px 7px;
-  outline: none;  
+  outline: none;
 }
 
 .recipe-create__textarea:focus {

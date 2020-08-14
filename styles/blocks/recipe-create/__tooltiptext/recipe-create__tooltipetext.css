@@ -1,10 +1,10 @@
 .recipe-create__tooltip .recipe-create__tooltiptext {
-  display: none;  
+  display: none;
   width: 100%;
-  background-color: #fff;
-  color: black;  
+  background-color: #FFF;
+  color: #000;
   border-radius: 6px;
-  padding: 5px 10px;  
+  padding: 5px 10px;
   border: 1px solid rgba(98, 98, 98, 0.2);
   box-sizing: border-box;
   font-style: normal;
@@ -12,7 +12,7 @@
   font-size: 16px;
   line-height: 22px;
   min-height: 42px;
-  
+
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -21,6 +21,6 @@
   margin-left: -109px;
 }
 
-.recipe-create__tooltip:focus-within .recipe-create__tooltiptext {  
+.recipe-create__tooltip:focus-within .recipe-create__tooltiptext {
   display: block;
 }

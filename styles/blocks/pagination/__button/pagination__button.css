@@ -1,19 +1,24 @@
-.slider__button {
+.pagination__button {
   width: 46px;
   height: 46px;
   border-radius: 50%;
   cursor: pointer;
   border-style: none;
-  background-color: #4A61DD;
-  color: #fff;
+  color: #000;
+  background-color: #FFF;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
   padding: 0;
   margin-right: 21px;
+  transition: opacity .5s ease;
 }
 
-.slider__button:last-child {
+.pagination__button:last-child {
   margin-right: 0;
+}
+
+.pagination__button:hover {
+  opacity: .7;
 }
