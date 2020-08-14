@@ -1,5 +1,5 @@
-@import url(./_active/recipe-create__block-usefile_active.css);
-@import url(./_inactive/recipe-create__block-usefile_inactive.css);
+@import url('./_active/recipe-create__block-usefile_active.css');
+@import url('./_inactive/recipe-create__block-usefile_inactive.css');
 
 .recipe-create__block-usefile {
   display: none;

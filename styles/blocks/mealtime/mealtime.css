@@ -1,10 +1,4 @@
-@import url(./__checkbox/mealtime__checkbox.css);
-@import url(./__container/mealtime__container.css);
-@import url(./__paragraph/mealtime__paragraph.css);
-@import url(./__button/_type/mealtime__button_type_dinner.css);
-@import url(./__button/_type/mealtime__button_type_lunch.css);
-@import url(./__button/_type/mealtime__button_type_breakfast.css);
-@import url(./__button/mealtime__button.css);
+@import url('./__checkbox/mealtime__checkbox.css');
 
 .mealtime {
   display: flex;
