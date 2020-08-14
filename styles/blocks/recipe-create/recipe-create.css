@@ -4,7 +4,7 @@
 @import url('./__label/recipe-create__label.css');
 @import url('./__input-container/recipe-create__input-container.css');
 @import url('./__input/recipe-create__input.css');
-@import url('./__error/recipe-create__error.css');
+@import url('./__error/recipe-create__error.css)');
 @import url('./__label-addphoto/recipe-create__label-addphoto.css');
 @import url('./__row/recipe-create__row.css');
 @import url('./__button-add/recipe-create__button-add.css');
@@ -20,8 +20,8 @@
 @import url('./__block-usefile/_active/recipe-create__block-usefile_active.css');
 @import url('./__usefile/recipe-create__usefile.css');
 @import url('./__textarea/recipe-create__textarea.css');
-@import url('./__input/_bgcolor/recipe-create__input_bgcolor.css');
-@import url('__row/_margin/recipe-create__row_margin.css');
+@import url('./__ingredients-item/recipe-create__ingredients-item.css');
+@import url('./__ingredients-count/recipe-create__ingredients-count.css');
 
 .recipe-create {
   max-width: 1170px;
