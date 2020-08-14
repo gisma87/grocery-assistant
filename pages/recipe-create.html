@@ -11,158 +11,165 @@
 </head>
 
 <body>
-<div class="root">
-  <header class="header header_height root__section">
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="main-page-auth.html" class="menu__link">Рецепты</a>
-        </li>
-        <li class="menu__item">
-          <a href="page-subscriptions.html" class="menu__link">Мои подписки</a>
-        </li>
-        <li class="menu__item">
-          <a href="recipe-create.html" class="menu__link menu__link_active">Создать рецепт</a>
-        </li>
-        <li class="menu__item">
-          <a href="page-favourites.html" class="menu__link">Избранное</a>
-        </li>
-        <li class="menu__item">
-          <a href="shopping-list-auth.html" class="menu__link">Список покупок</a>
-        </li>
-      </ul>
-      <div class="menu__container">
-        <a href="channge-password.html" class="menu__link menu__link_margins_right">Изменить пароль</a>
-        <button class="menu__button">Выход</button>
-      </div>
-    </nav>
-  </header>
-
-  <main class="recipe-create root__section root__section_padding_bottom">
-    <h1 class="content-title">Создание рецепта</h1>
-    <form name="recipe-create" class="recipe-create__form">
-
-      <label for="nameDish" class="recipe-create__label recipe-create__label_grid_name">Название рецепта</label>
-      <div
-        class="recipe-create__input-container recipe-create__input-container_grid_name recipe-create__inpute-container_size_l">
-        <input type="text" id="nameDish" placeholder="Оладьи с кабачком"
-               class="recipe-create__input recipe-create__input_height_s" required/>
-        <span id="error-nameDish" class="recipe-create__error"></span>
-      </div>
-
-      <p class="recipe-create__label-checkbox">Теги</p>
-      <div class="checkbox recipe-create__checkbox">
-        <label for="orange1" class="checkbox__label">
-          <input type="checkbox" id="orange1" name="orange" class="checkbox__input checkbox__input_color_orange" checked />
-          <span class="checkbox__span checkbox__span_color_orange"></span>
-          <span>Завтрак</span>
-        </label>
-        <label for="green1" class="checkbox__label">
-          <input type="checkbox" id="green1" name="green" class="checkbox__input checkbox__input_color_green" checked />
-          <span class="checkbox__span checkbox__span_color_green"></span>
-          <span>Обед</span>
-        </label>
-        <label for="purple1" class="checkbox__label">
-          <input type="checkbox" id="purple1" name="purple" class="checkbox__input checkbox__input_color_purple" checked />
-          <span class="checkbox__span checkbox__span_color_purple"></span>
-          <span>Ужин</span>
-        </label>
-      </div>
-    
-      <label for="ingredients" class="recipe-create__label recipe-create__label_grid_ingredients">Ингредиенты</label>
-      <div class="recipe-create__row-form recipe-create__row-form_grid_inputs-ingredients">
-        <div class="recipe-create__container-ingredients">
-          <div class="recipe-create__input-container recipe-create__inpute-container_size_m recipe-create__tooltip">
-            <input type="text" name="ingredients" id="ingredients"
-                   class="recipe-create__input recipe-create__input_height_s" required/>
-            <span id="error-ingredients" class="recipe-create__error"></span>
-            <div id="tooltiptext" class="recipe-create__tooltiptext"></div>
-          </div>
-
-          <div class="recipe-create__input-container recipe-create__inpute-container_size_s">
-            <input type="number" name="ingredients-count" id="ingredientsCount"
-                   class="recipe-create__input recipe-create__input_height_s" required/>
-            <span id="error-ingredientsCount" class="recipe-create__error"></span>
-          </div>
-          <label for="ingredientsCount" class="recipe-create__label" id="ingredientsTag">шт.</label>
-        </div>
-
-        <template id="tmpl">
-          <div class="recipe-create__container-ingredients ingredient-item recipe-create__row_margin">
-            <div class="recipe-create__input-container recipe-create__inpute-container_size_m recipe-create__tooltip">
-              <input type="text"
-                     class="recipe-create__ingredients-item recipe-create__input recipe-create__input_height_s recipe-create__input_bgcolor"
-                     readonly/>
-            </div>
-            <div class="recipe-create__input-container recipe-create__inpute-container_size_s">
-              <input type="number"
-                     class="recipe-create__ingredients-count recipe-create__input recipe-create__input_height_s recipe-create__input_bgcolor"
-                     readonly/>
-            </div>
-            <span class="recipe-create__ingredients-tag recipe-create__label">шт.</span>
-            <button class='recipe-create__button-delete'></button>
-          </div>
-        </template>
-      </div>
-
-      <button type="button" class='recipe-create__button-add'>Добавить ингредиент</button>
-
-      <label for="time" class="recipe-create__label recipe-create__label_grid_time">Время приготовления</label>
-      <div class="recipe-create__row recipe-create__row_grid_time">
-        <div class="recipe-create__input-container recipe-create__inpute-container_size_xs">
-          <input type="text" name="time" id="time" class="recipe-create__input recipe-create__input_height_s"
-                 required/>
-          <span id="error-time" class="recipe-create__error"></span>
-        </div>
-        <p class="recipe-create__time">минут</p>
-      </div>
-
-      <label for="description"
-             class="recipe-create__label recipe-create__label_margin recipe-create__label_grid_description">Описание</label>
-      <div
-        class="recipe-create__input-container recipe-create__input-container_margin recipe-create__input-container_grid_description recipe-create__inpute-container_size_xl">
-        <textarea name="description" id="description" class="recipe-create__textarea"></textarea>
-        <span id="error-description" class="recipe-create__error"></span>
-      </div>
-
-      <p class="recipe-create__label-addphoto">Загрузите фото</p>
-      <div class="recipe-create__row-form recipe-create__row-form_grid_addfile">
-        <label for="addFile"
-               class="button recipe-create__button recipe-create__button_position_start button_size_s button_color_grey button_font">Выбрать
-          файл</label>
-        <input type='file' name='add-file' id='addFile' class='recipe-create__input-addfile' required/>
-        <div class="recipe-create__block-usefile recipe-create__block-usefile_inactive">
-          <span class="recipe-create__usefile">Cake_12.jpeg</span>
-          <button class='recipe-create__button-delete'></button>
-        </div>
-
-      </div>
-
-      <button class="button recipe-create__button_grid_main-button button_size_s button_color_blue button_font">
-        Создать рецепт
-      </button>
-    </form>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__container">
-      <a class="footer__link" href="#">Продуктовый помощник</a>
-      <nav class="menu footer__menu">
+  <div class="root">
+    <header class="header header_height root__section">
+      <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
+            <a href="main-page-auth.html" class="menu__link">Рецепты</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link menu__link_color_white">Технологии</a>
+            <a href="page-subscriptions.html" class="menu__link">Мои подписки</a>
+          </li>
+          <li class="menu__item">
+            <a href="recipe-create.html" class="menu__link menu__link_active">Создать рецепт</a>
+          </li>
+          <li class="menu__item">
+            <a href="page-favourites.html" class="menu__link">Избранное</a>
+          </li>
+          <li class="menu__item">
+            <a href="shopping-list-auth.html" class="menu__link">Список покупок</a>
           </li>
         </ul>
+        <div class="menu__container">
+          <a href="channge-password.html" class="menu__link menu__link_margins_right">Изменить пароль</a>
+          <button class="menu__button">Выход</button>
+        </div>
       </nav>
-    </div>
-  </footer>
-</div>
-<script src="../js/config.js"></script>
-<script src="../js/api.js"></script>
-<script src="../js/Ingredients.js"></script>
-<script src="../js/recipe-create.js"></script>
+    </header>
+
+    <main class="recipe-create root__section root__section_padding_bottom">
+      <h1 class="content-title">Создание рецепта</h1>
+      <form name="recipe-create" class="recipe-create__form">
+
+        <label for="nameDish"
+          class="recipe-create__label recipe-create__label_margin recipe-create__label_grid_name">Название
+          рецепта</label>
+        <div
+          class="recipe-create__input-container recipe-create__input-container_grid_name recipe-create__inpute-container_size_l">
+          <input type="text" id="nameDish" placeholder="Оладьи с кабачком"
+            class="recipe-create__input recipe-create__input_height_s" required />
+          <span id="error-nameDish" class="recipe-create__error"></span>
+        </div>
+
+        <p class="recipe-create__label-checkbox">Теги</p>
+        <div class="checkbox recipe-create__checkbox">
+          <label for="orange1" class="checkbox__label">
+            <input type="checkbox" id="orange1" name="orange" class="checkbox__input checkbox__input_color_orange"
+              checked />
+            <span class="checkbox__span checkbox__span_color_orange"></span>
+            <span>Завтрак</span>
+          </label>
+          <label for="green1" class="checkbox__label">
+            <input type="checkbox" id="green1" name="green" class="checkbox__input checkbox__input_color_green"
+              checked />
+            <span class="checkbox__span checkbox__span_color_green"></span>
+            <span>Обед</span>
+          </label>
+          <label for="purple1" class="checkbox__label">
+            <input type="checkbox" id="purple1" name="purple" class="checkbox__input checkbox__input_color_purple"
+              checked />
+            <span class="checkbox__span checkbox__span_color_purple"></span>
+            <span>Ужин</span>
+          </label>
+        </div>
+
+        <label for="ingredients"
+          class="recipe-create__label recipe-create__label_margin recipe-create__label_grid_ingredients">Ингредиенты</label>
+        <div class="recipe-create__row-form recipe-create__row-form_grid_inputs-ingredients">
+          <div class="recipe-create__container-ingredients">
+            <div class="recipe-create__input-container recipe-create__inpute-container_size_m recipe-create__tooltip">
+              <input type="text" name="ingredients" id="ingredients"
+                class="recipe-create__input recipe-create__input_height_s" required />
+              <span id="error-ingredients" class="recipe-create__error"></span>
+              <div id="tooltiptext" class="recipe-create__tooltiptext"></div>
+            </div>
+
+            <div class="recipe-create__input-container recipe-create__inpute-container_size_s">
+              <input type="number" name="ingredients-count" id="ingredientsCount"
+                class="recipe-create__input recipe-create__input_height_s" required />
+              <span id="error-ingredientsCount" class="recipe-create__error"></span>
+            </div>
+            <label for="ingredientsCount" class="recipe-create__label" id="ingredientsTag">шт.</label>
+          </div>
+
+          <template id="tmpl">
+            <div class="recipe-create__container-ingredients ingredient-item recipe-create__row_margin">
+              <div class="recipe-create__input-container recipe-create__inpute-container_size_m recipe-create__tooltip">
+                <input type="text"
+                  class="recipe-create__ingredients-item recipe-create__input recipe-create__input_height_s recipe-create__input_bgcolor"
+                  readonly />
+              </div>
+              <div class="recipe-create__input-container recipe-create__inpute-container_size_s">
+                <input type="number"
+                  class="recipe-create__ingredients-count recipe-create__input recipe-create__input_height_s recipe-create__input_bgcolor"
+                  readonly />
+              </div>
+              <span class="recipe-create__ingredients-tag recipe-create__label">шт.</span>
+              <button class='recipe-create__button-delete'></button>
+            </div>
+          </template>
+        </div>
+
+        <button type="button" class='recipe-create__button-add'>Добавить ингредиент</button>
+
+        <label for="time" class="recipe-create__label recipe-create__label_grid_time">Время приготовления</label>
+        <div class="recipe-create__row recipe-create__row_grid_time">
+          <div class="recipe-create__input-container recipe-create__inpute-container_size_xs">
+            <input type="text" name="time" id="time" class="recipe-create__input recipe-create__input_height_s"
+              required />
+            <span id="error-time" class="recipe-create__error"></span>
+          </div>
+          <p class="recipe-create__time">минут</p>
+        </div>
+
+        <label for="description"
+          class="recipe-create__label recipe-create__label_margin recipe-create__label_grid_description">Описание</label>
+        <div
+          class="recipe-create__input-container recipe-create__input-container_margin recipe-create__input-container_grid_description recipe-create__inpute-container_size_xl">
+          <textarea name="description" id="description" class="recipe-create__textarea"></textarea>
+          <span id="error-description" class="recipe-create__error"></span>
+        </div>
+
+        <p class="recipe-create__label-addphoto">Загрузите фото</p>
+        <div class="recipe-create__row-form recipe-create__row-form_grid_addfile">
+          <label for="addFile"
+            class="button recipe-create__button recipe-create__button_position_start button_size_s button_color_grey button_font">Выбрать
+            файл</label>
+          <input type='file' name='add-file' id='addFile' class='recipe-create__input-addfile' required />
+          <div class="recipe-create__block-usefile recipe-create__block-usefile_inactive">
+            <span class="recipe-create__usefile">Cake_12.jpeg</span>
+            <button class='recipe-create__button-delete'></button>
+          </div>
+
+        </div>
+
+        <button class="button recipe-create__button_grid_main-button button_size_s button_color_blue button_font">
+          Создать рецепт
+        </button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__link" href="#">Продуктовый помощник</a>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Об авторе</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_color_white">Технологии</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/Ingredients.js"></script>
+  <script src="../js/recipe-create.js"></script>
 </body>
+
 </html>
