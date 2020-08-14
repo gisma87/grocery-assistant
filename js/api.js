@@ -34,7 +34,7 @@ class Api {
   }
 
   addSubscribtion(subscribtionId) {
-    return fetch(`${this._options.baseUrl}/subscribtions`, {
+    return fetch(`${this._options.baseUrl}/subscriptions`, {
       method: 'POST',
       headers: this._options.headers,
       body: JSON.stringify({
@@ -46,7 +46,7 @@ class Api {
   }
 
   removeSubscribtion(subscribtionId) {
-    return fetch(`${this._options.baseUrl}/subscribtions/${subscribtionId}`, {
+    return fetch(`${this._options.baseUrl}/subscriptions/${subscribtionId}`, {
       method: 'DELETE',
       headers: this._options.headers,
     })
