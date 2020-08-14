@@ -50,7 +50,8 @@ class Ingredients {
     const template = fragment.cloneNode(true);
 
     template.querySelector('.recipe-create__button-delete').addEventListener('click', this.deleteItem.bind(this));
-    this.containerIngredientItems.prepend(template);
+    const parentInput = this.ingredients.closest('.recipe-create__container-ingredients');
+    this.containerIngredientItems.insertBefore(template, parentInput);
   }
 
 
