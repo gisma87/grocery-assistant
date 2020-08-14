@@ -55,7 +55,7 @@ class Api {
   }
 
   addFavourites(favouritesId) {
-    return fetch(`${this._options.baseUrl}/favourites`, {
+    return fetch(`${this._options.baseUrl}/favorites`, {
       method: 'POST',
       headers: this._options.headers,
       body: JSON.stringify({
@@ -67,7 +67,7 @@ class Api {
   }
 
   removeFavourites(favouritesId) {
-    return fetch(`${this._options.baseUrl}/favourites/${favouritesId}`, {
+    return fetch(`${this._options.baseUrl}/favorites/${favouritesId}`, {
       method: 'DELETE',
       headers: this._options.headers,
     })
