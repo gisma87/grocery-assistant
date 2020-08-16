@@ -7,9 +7,8 @@ const api = new Api({
 
 // Переменные
 const recipeList = Array.from(document.querySelectorAll('.button'));
-const buttonStarList = Array.from(document.querySelectorAll('.button-star'));
 
-// Добавляет слушатель на все кнопки
+// Добавляет слушатель на кнопки добаления в покупки
 function setEventListeners(element, event, handler) {
   element.forEach(item => {
     item.addEventListener(event, handler);
