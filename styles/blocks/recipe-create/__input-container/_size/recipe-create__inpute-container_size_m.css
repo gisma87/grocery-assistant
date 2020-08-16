@@ -1,4 +1,4 @@
 .recipe-create__inpute-container_size_m {
   height: 42px;
-  width: 217px;
+  max-width: 217px;
 }
