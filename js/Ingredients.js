@@ -16,18 +16,6 @@ export default class Ingredients {
     this.ingredientsList.addEventListener('click', this.pasteIngredient.bind(this));
   }
 
-  // //выполняет функцию f через время t от последнего вызова
-  // debounce(f, t) {
-  //   return function () {
-  //     let previousCall = this.lastCall;
-  //     this.lastCall = Date.now();
-  //     if (previousCall && ((this.lastCall - previousCall) <= t)) {
-  //       clearTimeout(this.lastCallTimer);
-  //     }
-  //     this.lastCallTimer = setTimeout(() => f(), t);
-  //   }
-  // }
-
   // добавляем text в span с data-id = id, и вставляем в domElement
   addIngredientTextElement(text, domElement, id) {
     const paragraph = document.createElement('span');
@@ -80,8 +68,6 @@ export default class Ingredients {
       })
       .catch(err => {
         console.log(`Ошибка: ${err}`);
-        errorIngredients.textContent = `Ошибка: ${err}`;
-        errorIngredients.classList.add('recipe-create__error_active');
       })
   }
 
@@ -94,6 +80,7 @@ export default class Ingredients {
           this.createIngredient(this.ingredients.value, this.ingredientsCount.value, this.ingredientsTag.textContent);
           this.ingredients.value = '';
           this.ingredientsCount.value = '';
+          this.ingredientsList.innerHTML = '';
         }
       })
       .catch(err => {
