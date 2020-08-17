@@ -3,9 +3,6 @@ import Ingredients from "./Ingredients.js";
 // input куда вводятся ингредиенты
 const ingredients = document.querySelector('#ingredients');
 
-// поле ошибки под input ингредиентов
-const errorIngredients = document.querySelector('#error-ingredients');
-
 // выпадающий список массива найденных по данному запросу ингредиентов arr[i].title
 const ingredientsList = document.querySelector('.recipe-create__tooltiptext');
 
