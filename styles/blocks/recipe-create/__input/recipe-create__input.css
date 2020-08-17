@@ -1,5 +1,5 @@
 .recipe-create__input {
-  background: #fff;
+  background: #FFF;
   border: 0.5px solid rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   border-radius: 6px;
@@ -9,13 +9,13 @@
 }
 
 .recipe-create__input:focus {
-  border: 1px solid #4a61dd;
+  border: 1px solid #4A61DD;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
 }
 
 .recipe-create__input_error {
-  border: 1px solid #ff0000;
+  border: 1px solid #FF0000;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
 }
