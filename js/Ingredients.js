@@ -1,4 +1,6 @@
-class Ingredients {
+import { debounce } from "./functions/debounce.js";
+
+export default class Ingredients {
   constructor(api, ingredients, ingredientsCount, ingredientsTag, ingredientsList, containerIngredientItems, buttonAddIngredient) {
     this.api = api;
     this.ingredientsList = ingredientsList;
@@ -7,24 +9,24 @@ class Ingredients {
     this.ingredientsCount = ingredientsCount;
     this.buttonAddIngredient = buttonAddIngredient;
     this.containerIngredientItems = containerIngredientItems;
-    this.debounceSearchIngredient = this.debounce(this.searchIngredient.bind(this), 1000);
+    this.debounceSearchIngredient = debounce(this.searchIngredient.bind(this), 1000);
 
     this.buttonAddIngredient.addEventListener('click', this.addIngredient.bind(this));
     this.ingredients.addEventListener('input', this.debounceSearchIngredient);
     this.ingredientsList.addEventListener('click', this.pasteIngredient.bind(this));
   }
 
-  //выполняет функцию f через время t от последнего вызова
-  debounce(f, t) {
-    return function () {
-      let previousCall = this.lastCall;
-      this.lastCall = Date.now();
-      if (previousCall && ((this.lastCall - previousCall) <= t)) {
-        clearTimeout(this.lastCallTimer);
-      }
-      this.lastCallTimer = setTimeout(() => f(), t);
-    }
-  }
+  // //выполняет функцию f через время t от последнего вызова
+  // debounce(f, t) {
+  //   return function () {
+  //     let previousCall = this.lastCall;
+  //     this.lastCall = Date.now();
+  //     if (previousCall && ((this.lastCall - previousCall) <= t)) {
+  //       clearTimeout(this.lastCallTimer);
+  //     }
+  //     this.lastCallTimer = setTimeout(() => f(), t);
+  //   }
+  // }
 
   // добавляем text в span с data-id = id, и вставляем в domElement
   addIngredientTextElement(text, domElement, id) {

@@ -1,3 +1,5 @@
+import Ingredients from "./Ingredients.js";
+
 // input куда вводятся ингредиенты
 const ingredients = document.querySelector('#ingredients');
 
