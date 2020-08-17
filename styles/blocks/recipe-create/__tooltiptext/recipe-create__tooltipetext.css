@@ -22,8 +22,7 @@
   position: absolute;
   z-index: 1;
   top: 100%;
-  left: 50%;
-  margin-left: -118px;
+  left: 0;
 }
 
 .recipe-create__tooltip:focus-within .recipe-create__tooltiptext {
