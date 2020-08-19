@@ -1,0 +1,18 @@
+@import url('./__block-buttons/recipe__block-buttons.css');
+@import url('./__button/recipe__button.css');
+@import url('./__block-title/recipe__block-title.css');
+@import url('./__header/recipe__header.css');
+@import url('./__ingredients/recipe__ingredients.css');
+@import url('./__item/recipe__item.css');
+@import url('./__list/recipe__list.css');
+@import url('./__photo/recipe__photo.css');
+@import url('./__wrapper/recipe__wrapper.css');
+@import url('./__text/recipe__text.css');
+@import url('./__recipe-info/recipe__recipe-info.css');
+
+.recipe {
+  display: grid;
+  grid-template-columns:  480px 1fr;
+  grid-column-gap: 61px;
+  padding-bottom: 50px;
+}

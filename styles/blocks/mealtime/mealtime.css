@@ -1,0 +1,6 @@
+@import url('./__checkbox/mealtime__checkbox.css');
+
+.mealtime {
+  display: flex;
+  justify-content: space-between;
+}

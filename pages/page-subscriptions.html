@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, css" />
+    <meta name="description" content="Продуктовый помощник" />
+    <link rel="stylesheet" href="../styles/page-subscriptions.css" />
+    <title>Продуктовый помощник</title>
+  </head>
+
+  <body>
+    <div class="root">
+      <header class="header root__section root__section_padding_bottom">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="main-page-auth.html" class="menu__link">Рецепты</a>
+            </li>
+            <li class="menu__item">
+              <a
+                href="page-subscriptions.html"
+                class="menu__link menu__link_active"
+                >Мои подписки</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="recipe-create.html" class="menu__link">Создать рецепт</a>
+            </li>
+            <li class="menu__item">
+              <a href="page-favourites.html" class="menu__link">Избранное</a>
+            </li>
+            <li class="menu__item">
+              <a href="shopping-list-auth.html" class="menu__link"
+                >Список покупок</a
+              >
+            </li>
+          </ul>
+          <div class="menu__container">
+            <a
+              href="change-password.html"
+              class="menu__link menu__link_margins_right"
+              >Изменить пароль</a
+            >
+            <button class="menu__button">Выход</button>
+          </div>
+        </nav>
+      </header>
+      <main class="content root__section">
+        <h1 class="content-title">Мои подписки</h1>
+        <section class="cards-container root__recipes">
+          <div class="card-subscription">
+            <h2 class="recipe-subtitle">Вероника Чернова</h2>
+            <ul class="card-subscription__recipes-list">
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">Французские тосты</h3>
+                    <p class="recipe-info__time">20 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toasts-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">
+                      Французский тост с сиропом агавы
+                    </h3>
+                    <p class="recipe-info__time">30 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toast-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">
+                      Вафли с яйцом «Бенедикт» и лососем
+                    </h3>
+                    <p class="recipe-info__time">35 мин.</p>
+                  </div>
+                  <img
+                    src="../images/benedict-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a class="card-subscription__button">Еще 7 рецептов...</a>
+              </li>
+            </ul>
+            <button
+              data-author-id="1"
+              class="button button_size_l button_color_grey"
+            >
+              Отписаться
+            </button>
+          </div>
+
+          <div class="card-subscription">
+            <h2 class="recipe-subtitle">Маша Ульянова</h2>
+            <ul class="card-subscription__recipes-list">
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">Паста с беконом</h3>
+                    <p class="recipe-info__time">20 мин.</p>
+                  </div>
+                  <img
+                    src="../images/pasta-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">Английский завтрак</h3>
+                    <p class="recipe-info__time">30 мин.</p>
+                  </div>
+                  <img
+                    src="../images/breakfast-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+            </ul>
+            <button
+              data-author-id="2"
+              class="button button_size_l button_color_grey"
+            >
+              Отписаться
+            </button>
+          </div>
+
+          <div class="card-subscription">
+            <h2 class="recipe-subtitle">lera</h2>
+            <ul class="card-subscription__recipes-list">
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">Французские тосты</h3>
+                    <p class="recipe-info__time">20 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toasts-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">
+                      Французский тост с сиропом агавы
+                    </h3>
+                    <p class="recipe-info__time">30 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toast-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">
+                      Вафли с яйцом «Бенедикт» и лососем
+                    </h3>
+                    <p class="recipe-info__time">35 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toasts-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+            </ul>
+            <button
+              data-author-id="3"
+              class="button button_size_l button_color_grey"
+            >
+              Отписаться
+            </button>
+          </div>
+
+          <div class="card-subscription">
+            <h2 class="recipe-subtitle">lera</h2>
+            <ul class="card-subscription__recipes-list">
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">Французские тосты</h3>
+                    <p class="recipe-info__time">20 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toasts-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">
+                      Французский тост с сиропом агавы
+                    </h3>
+                    <p class="recipe-info__time">30 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toast-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">
+                      Вафли с яйцом «Бенедикт» и лососем
+                    </h3>
+                    <p class="recipe-info__time">35 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toasts-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+            </ul>
+            <button
+              data-author-id="4"
+              class="button button_size_l button_color_grey"
+            >
+              Отписаться
+            </button>
+          </div>
+
+          <div class="card-subscription">
+            <h2 class="recipe-subtitle">Вероника Чернова</h2>
+            <ul class="card-subscription__recipes-list">
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">Французские тосты</h3>
+                    <p class="recipe-info__time">20 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toasts-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">
+                      Французский тост с сиропом агавы
+                    </h3>
+                    <p class="recipe-info__time">30 мин.</p>
+                  </div>
+                  <img
+                    src="../images/toast-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">
+                      Вафли с яйцом «Бенедикт» и лососем
+                    </h3>
+                    <p class="recipe-info__time">35 мин.</p>
+                  </div>
+                  <img
+                    src="../images/benedict-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a class="card-subscription__button">Еще 7 рецептов...</a>
+              </li>
+            </ul>
+            <button
+              data-author-id="5"
+              class="button button_size_l button_color_grey"
+            >
+              Отписаться
+            </button>
+          </div>
+
+          <div class="card-subscription">
+            <h2 class="recipe-subtitle">Маша Ульянова</h2>
+            <ul class="card-subscription__recipes-list">
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">Паста с беконом</h3>
+                    <p class="recipe-info__time">20 мин.</p>
+                  </div>
+                  <img
+                    src="../images/pasta-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+              <li class="card-subscription__recipe-item">
+                <a
+                  class="card-subscription__link-recipe"
+                  href="page-recipe-auth.html"
+                  target="_blank"
+                >
+                  <div class="recipe-info recipe-info_type_flex">
+                    <h3 class="recipe-info__title">Английский завтрак</h3>
+                    <p class="recipe-info__time">30 мин.</p>
+                  </div>
+                  <img
+                    src="../images/breakfast-icon.png"
+                    alt="Фото рецепта"
+                    class="card-subscription__image"
+                  />
+                </a>
+              </li>
+            </ul>
+            <button
+              data-author-id="6"
+              class="button button_size_l button_color_grey card-subscription__button"
+            >
+              Отписаться
+            </button>
+          </div>
+        </section>
+
+        <section class="pagination root__pagination">
+          <button
+            class="pagination__button pagination__button_type_left"
+          ></button>
+          <button class="pagination__button pagination__button_active">
+            1
+          </button>
+          <button class="pagination__button">2</button>
+          <button class="pagination__button">3</button>
+          <button class="pagination__button">4</button>
+          <button class="pagination__button">5</button>
+          <button
+            class="pagination__button pagination__button_type_right"
+          ></button>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a class="footer__link" href="#">Продуктовый помощник</a>
+          <div class="menu footer__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link_color_white"
+                  >Об авторе</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link_color_white"
+                  >Технологии</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/config.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/functions/subscribtion.js"></script>
+    <script src="../js/page-subscriptions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.recipe-info__title {
+  font-style: normal;
+  font-weight: normal;  
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 -7px;
+  max-width: 275px;
+}

@@ -1,0 +1,15 @@
+@import url('./_active/button-star_active.css');
+@import url('./_inactive/button-star_inactive.css');
+@import url('./_size/button-star_size_l.css');
+@import url('./_size/button-star_size_s.css');
+@import url('./__tooplist/button-star__tooplist.css');
+
+.button-star {
+  cursor: pointer;
+  border-style: none;
+  background-color: #FFF;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  outline: none;
+}

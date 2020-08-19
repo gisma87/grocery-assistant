@@ -1,0 +1,10 @@
+.card-shopping__link-recipe {
+  width: 100%;
+  display: flex;
+  color: #000;
+  text-decoration: none;
+}
+
+.card-shopping__link-recipe:hover {
+  opacity: .7;
+}

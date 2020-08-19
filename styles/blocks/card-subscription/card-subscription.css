@@ -1,0 +1,17 @@
+@import url('./__image/card-subscription__image.css');
+@import url('./__link-recipe/card-subscription__link-recipe.css');
+@import url('./__recipe-item/card-subscription__recipe-item.css');
+@import url('./__recipes-list/card-subscription__recipes-list.css');
+@import url('./__button/card-subscription__button.css');
+@import url('./__link-autor/card-subscription__link-autor.css');
+
+.card-subscription {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 364px;
+  border-radius: 8px;
+  border: 1px solid #EEE;
+  box-sizing: border-box;
+  padding: 31px 26px 26px;
+}

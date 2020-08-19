@@ -1,0 +1,16 @@
+.card-shopping__remove {
+  background-color: #FFF;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #858383;
+  cursor: pointer;
+  outline: none;
+  align-self: center;
+}
+
+.card-shopping__remove:hover {
+  opacity: 0.7;
+}

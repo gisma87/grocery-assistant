@@ -1,0 +1,13 @@
+@import url('./__mealtime/recipe-info__mealtime.css');
+@import url('./__mealtime/_type/recipe-info__mealtime_type_breakfast.css');
+@import url('./__mealtime/_type/recipe-info__mealtime_type_lunch.css');
+@import url('./__mealtime/_type/recipe-info__mealtime_type_dinner.css');
+@import url('./__time/recipe-info__time.css');
+@import url('./__author/recipe-info__author.css');
+@import url('./__title/recipe-info__title.css');
+@import url('./_type/recipe-info_type_flex.css');
+
+.recipe-info {
+  justify-content: center;
+  flex-direction: column;
+}

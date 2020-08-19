@@ -1,0 +1,9 @@
+.button_color_grey {
+  background-color: #F0F3FF;
+  color: #4A61DD;
+  transition: background-color .5s ease;
+}
+
+.button_color_grey:hover {
+  background-color: #D8DEFF;
+}

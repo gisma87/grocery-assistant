@@ -1,0 +1,11 @@
+@import url('./_grid/recipe-create__row-form_grid_ingredients.css');
+@import url('./_grid/recipe-create__row-form_grid_addfile.css');
+
+.recipe-create__row-form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
