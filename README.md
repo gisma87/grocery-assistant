@@ -1,4 +1,6 @@
 # grocery-assistant
+ссылка на сайт: [gisma87.github.io/grocery-assistant]('https://gisma87.github.io/grocery-assistant/')
+
 Сайт сделан для курса backend-разработчик Яндекс.Практикум. 
 
 Студенты backend-факультета будут делать для это сайта соовтетствующий backend-функционал.
